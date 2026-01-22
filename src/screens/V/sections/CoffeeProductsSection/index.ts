@@ -1,0 +1,1 @@
+export { CoffeeProductsSection } from "./CoffeeProductsSection";
