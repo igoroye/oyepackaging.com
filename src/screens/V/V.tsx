@@ -9,20 +9,19 @@ import { PackagingConfiguratorSection } from "./sections/PackagingConfiguratorSe
 const footerLinks = {
   packaging: [
     { label: "Flat Bottom Bags", href: "#" },
-    { label: "Carton Boxes", href: "#" },
-    { label: "Side Gusset Bags", href: "#" },
     { label: "Standup Bags", href: "#" },
+    { label: "Carton Boxes", href: "#" },
   ],
   services: [
     { label: "Drip Bags", href: "#" },
     { label: "Brew Bags", href: "#", disabled: true },
-    { label: "Capsules", href: "#", disabled: true },
+    { label: "Cold Brew Bags", href: "#", disabled: true },
   ],
   wiki: [
-    { label: "ORDERS", href: "#" },
-    { label: "Payments and pricing", href: "#" },
-    { label: "Delivery", href: "#" },
-    { label: "Return & refund policy", href: "#" },
+    { label: "Orders", href: "#", disabled: true },
+    { label: "Payments and pricing", href: "#", disabled: true },
+    { label: "Delivery", href: "#", disabled: true },
+    { label: "Return & refund policy", href: "#", disabled: true },
   ],
   aboutUs: [
     { label: "Who we are", href: "#" },
@@ -93,9 +92,6 @@ export const V = (): JSX.Element => {
         <PackagingConfiguratorSection />
       </section>
 
-      <section className="relative w-full">
-        <CustomerReviewsSection />
-      </section>
 
       <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-12">
         <div className="max-w-[1240px] mx-auto">

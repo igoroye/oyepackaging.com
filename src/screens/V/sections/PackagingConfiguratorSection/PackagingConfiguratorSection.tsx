@@ -13,24 +13,31 @@ const accordionItems = [
     content:
       "Design the packaging that suits your brand perfectly with our intuitive, step-by-step configurator. Enjoy complete freedom in selecting materials, print options, finishes, and add-ons, while controlling a price tailored to your needs.",
     hasButton: true,
+    buttonText: "SIGN UP",
   },
   {
     value: "test-print",
     title: "TEST PRINT",
-    content: null,
-    hasButton: false,
+    content:
+      "Want to test your design before ordering? We've got you covered! We'll print it and deliver it to your doorstep within 10 days so you can review and adjust it before placing your final order.",
+    hasButton: true,
+    buttonText: "SIGN UP",
   },
   {
     value: "3d-previews",
     title: "3D PREVIEWS",
-    content: null,
-    hasButton: false,
+    content:
+      "Need pictures of your new designer bags? We've got you covered! Simply upload your design to our design service and receive a 3D model that can be used for any purpose.",
+    hasButton: true,
+    buttonText: "LEARN MORE",
   },
   {
     value: "product-photoshoot",
     title: "PRODUCT PHOTOSHOOT",
-    content: null,
-    hasButton: false,
+    content:
+      "Showcase your packaging at its best! After printing, we'll conduct a professional photoshoot to capture high-quality photo of your final product. Perfect for marketing, e-commerce, or social media.",
+    hasButton: true,
+    buttonText: "CONTACT US",
   },
 ];
 
@@ -71,7 +78,7 @@ export const PackagingConfiguratorSection = (): JSX.Element => {
                             className="h-auto w-fit px-6 py-3 rounded-[40px] border-2 border-main bg-transparent hover:bg-main/10 transition-colors"
                           >
                             <span className="text-main text-base tracking-[0.48px] [font-family:'Inter',Helvetica] font-medium">
-                              SIGN UP
+                              {item.buttonText}
                             </span>
                           </Button>
                         )}
@@ -83,17 +90,27 @@ export const PackagingConfiguratorSection = (): JSX.Element => {
             </Accordion>
           </div>
 
-          <div className="relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
-            <img
-              className="absolute w-[100px] sm:w-[120px] md:w-[140px] h-auto top-0 left-0 lg:left-auto z-10"
-              alt="Decoration"
-              src="https://c.animaapp.com/mko0yo41F03JfF/img/group-251.png"
-            />
-            <img
-              className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[354px] h-auto object-cover"
-              alt="Product packaging"
-              src="https://c.animaapp.com/mko0yo41F03JfF/img/----------1-9.png"
-            />
+          <div className="relative flex items-center justify-end min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] pr-0 lg:pr-8">
+            {/* Decorative circles - top left */}
+            <div className="absolute top-[60px] sm:top-[80px] lg:top-[100px] left-0 sm:left-8 lg:left-12 z-10 flex items-center gap-2">
+              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full border-2 border-text/20 flex items-center justify-center bg-white">
+                <img
+                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] lg:w-[60px] lg:h-[60px]"
+                  alt="Edit icon"
+                  src="https://c.animaapp.com/mko0yo41F03JfF/img/group-251.png"
+                />
+              </div>
+              <div className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full border-2 border-text/20 bg-white"></div>
+            </div>
+
+            {/* Packaging bag - tilted to the right */}
+            <div className="relative w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[450px] h-[350px] sm:h-[420px] lg:h-[500px]">
+              <img
+                className="absolute inset-0 w-full h-full object-contain transform rotate-[15deg] origin-center"
+                alt="Product packaging"
+                src="https://c.animaapp.com/mko0yo41F03JfF/img/----------1-9.png"
+              />
+            </div>
           </div>
         </div>
       </div>

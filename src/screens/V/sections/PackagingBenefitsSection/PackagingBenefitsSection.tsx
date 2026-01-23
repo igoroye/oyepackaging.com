@@ -33,6 +33,13 @@ const benefitsData = [
     highlighted: false,
     reversed: true,
   },
+  {
+    icon: "https://c.animaapp.com/mko0yo41F03JfF/img/tour-virtual-2.png",
+    title: "RETURN POLICY",
+    description: "ACCORDING TO EUROPEAN STANDARDS",
+    iconAlt: "Return policy",
+    highlighted: false,
+  },
 ];
 
 export const PackagingBenefitsSection = (): JSX.Element => {
@@ -50,7 +57,8 @@ export const PackagingBenefitsSection = (): JSX.Element => {
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
-      const scrollAmount = scrollContainerRef.current.clientWidth * 0.8;
+      const cardWidth = 380; // Approximate card width + gap
+      const scrollAmount = cardWidth;
       const newScrollLeft =
         direction === "left"
           ? scrollContainerRef.current.scrollLeft - scrollAmount
@@ -73,63 +81,70 @@ export const PackagingBenefitsSection = (): JSX.Element => {
           PACKAGING PARTNER
         </h2>
 
-        {/* Desktop Grid View */}
-        <div className="hidden lg:grid lg:grid-cols-4 gap-5 mb-8">
-          {benefitsData.map((benefit, index) => (
-            <Card
-              key={index}
-              className={`bg-white rounded-[20px] h-[292px] transition-[transform,box-shadow] hover:shadow-lg hover:-translate-y-1 translate-y-[-1rem] animate-fade-in opacity-0 ${
-                benefit.highlighted ? "border-[#264eab]" : "border-transparent"
-              }`}
-              style={
-                {
-                  "--animation-delay": `${(index + 1) * 200}ms`,
-                } as React.CSSProperties
-              }
-            >
-              <CardContent className="p-[30px] h-full flex flex-col justify-between">
-                <div className="flex flex-col gap-8">
-                  <img
-                    className="w-[52px] h-[52px]"
-                    alt={benefit.iconAlt}
-                    src={benefit.icon}
-                  />
-
-                  <div className="flex flex-col gap-0">
-                    {benefit.reversed ? (
-                      <>
-                        <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-[22px] tracking-[0] leading-[29px]">
-                          {benefit.description}
-                        </p>
-                        <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-3xl tracking-[0] leading-[39px]">
-                          {benefit.title}
-                        </h3>
-                      </>
-                    ) : (
-                      <>
-                        <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-3xl tracking-[0] leading-[39px]">
-                          {benefit.title}
-                        </h3>
-                        <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-[22px] tracking-[0] leading-[29px]">
-                          {benefit.description}
-                        </p>
-                      </>
-                    )}
-                  </div>
-                </div>
-
-                <div className="flex justify-end">
-                  <div className="w-9 h-9 bg-bord rounded-[18px] flex items-center justify-center">
+        {/* Desktop: 3 Cards Visible + Partial 4th Card */}
+        <div className="hidden lg:block relative">
+          <div
+            ref={scrollContainerRef}
+            onScroll={checkScrollButtons}
+            className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {benefitsData.map((benefit, index) => (
+              <Card
+                key={index}
+                className={`bg-white rounded-[30px] w-[360px] h-[280px] flex-shrink-0 transition-[transform,box-shadow] hover:shadow-lg hover:-translate-y-1 translate-y-[-1rem] animate-fade-in opacity-0 ${
+                  benefit.highlighted ? "border-2 border-[#264eab]" : "border border-transparent"
+                }`}
+                style={
+                  {
+                    "--animation-delay": `${(index + 1) * 200}ms`,
+                  } as React.CSSProperties
+                }
+              >
+                <CardContent className="p-8 h-full flex flex-col justify-between">
+                  <div className="flex flex-col gap-6">
                     <img
-                      className="w-3 h-3"
-                      alt="Arrow"
-                      src="https://c.animaapp.com/mko0yo41F03JfF/img/-.svg"
+                      className="w-[52px] h-[52px]"
+                      alt={benefit.iconAlt}
+                      src={benefit.icon}
                     />
+
+                    <div className="flex flex-col gap-1">
+                      {benefit.reversed ? (
+                        <>
+                          <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-lg tracking-[0] leading-[24px]">
+                            {benefit.description}
+                          </p>
+                          <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-2xl tracking-[0] leading-[32px]">
+                            {benefit.title}
+                          </h3>
+                        </>
+                      ) : (
+                        <>
+                          <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-2xl tracking-[0] leading-[32px]">
+                            {benefit.title}
+                          </h3>
+                          <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-lg tracking-[0] leading-[24px]">
+                            {benefit.description}
+                          </p>
+                        </>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+
+                  <div className="flex justify-end">
+                    <div className="w-9 h-9 bg-bord rounded-[18px] flex items-center justify-center">
+                      <img
+                        className="w-3 h-3"
+                        alt="Arrow"
+                        src="https://c.animaapp.com/mko0yo41F03JfF/img/-.svg"
+                      />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Mobile/Tablet Slider View */}
@@ -143,34 +158,34 @@ export const PackagingBenefitsSection = (): JSX.Element => {
             {benefitsData.map((benefit, index) => (
               <Card
                 key={index}
-                className={`bg-white rounded-[20px] min-w-[280px] sm:min-w-[320px] md:min-w-[380px] h-[292px] snap-start transition-[transform,box-shadow] hover:shadow-lg ${
-                  benefit.highlighted ? "border-[#264eab]" : "border-transparent"
+                className={`bg-white rounded-[30px] min-w-[280px] sm:min-w-[320px] md:min-w-[360px] h-[280px] snap-start transition-[transform,box-shadow] hover:shadow-lg ${
+                  benefit.highlighted ? "border-2 border-[#264eab]" : "border border-transparent"
                 }`}
               >
-                <CardContent className="p-[30px] h-full flex flex-col justify-between">
-                  <div className="flex flex-col gap-8">
+                <CardContent className="p-6 sm:p-8 h-full flex flex-col justify-between">
+                  <div className="flex flex-col gap-6">
                     <img
                       className="w-[52px] h-[52px]"
                       alt={benefit.iconAlt}
                       src={benefit.icon}
                     />
 
-                    <div className="flex flex-col gap-0">
+                    <div className="flex flex-col gap-1">
                       {benefit.reversed ? (
                         <>
-                          <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-lg sm:text-[22px] tracking-[0] leading-[29px]">
+                          <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-base sm:text-lg tracking-[0] leading-[24px]">
                             {benefit.description}
                           </p>
-                          <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-2xl sm:text-3xl tracking-[0] leading-[39px]">
+                          <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-xl sm:text-2xl tracking-[0] leading-[32px]">
                             {benefit.title}
                           </h3>
                         </>
                       ) : (
                         <>
-                          <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-2xl sm:text-3xl tracking-[0] leading-[39px]">
+                          <h3 className="[font-family:'Inter',Helvetica] font-medium text-new-text text-xl sm:text-2xl tracking-[0] leading-[32px]">
                             {benefit.title}
                           </h3>
-                          <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-lg sm:text-[22px] tracking-[0] leading-[29px]">
+                          <p className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-base sm:text-lg tracking-[0] leading-[24px]">
                             {benefit.description}
                           </p>
                         </>
