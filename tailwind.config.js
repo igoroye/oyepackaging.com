@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         basic: "var(--basic)",
         "bg-beige": "var(--bg-beige)",
+        "bg-gray": "var(--bg-gray)",
         "bg-grey-2": "var(--bg-grey-2)",
         bord: "var(--bord)",
         buttonblue: "var(--buttonblue)",

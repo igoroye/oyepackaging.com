@@ -11,16 +11,19 @@ const navigationItems = [
     label: "DRIP BAGS",
     icon: "https://c.animaapp.com/mkqxfu3aXzgBiS/img/vector-18.svg",
     active: true,
+    href: "/services",
   },
   {
     label: "BREW BAGS",
     icon: "https://c.animaapp.com/mkqxfu3aXzgBiS/img/tea-1.svg",
     comingSoon: true,
+    href: "/brew-bags",
   },
   {
     label: "СOLD BREW BAGS",
     icon: "https://c.animaapp.com/mkqxfu3aXzgBiS/img/tea-2.svg",
     comingSoon: true,
+    href: "/cold-brew-bags",
   },
 ];
 
@@ -255,37 +258,73 @@ export const DripBags = (): JSX.Element => {
       <aside className="hidden xl:flex fixed top-[132px] left-[100px] z-40 flex-col gap-[7px]">
         {navigationItems.map((item, index) => (
           <div key={index} className="relative">
-            <Card
-              className={`w-[294px] h-[65px] rounded-[10px] ${
-                item.active
-                  ? "shadow-[0px_5px_16px_-1px_#00000026] opacity-60"
-                  : "opacity-60"
-              }`}
-            >
-              <CardContent className="flex items-center gap-3 p-0 h-full px-4">
-                <img
-                  className="w-[31px] h-[31px]"
-                  alt={item.label}
-                  src={item.icon}
-                />
-                <div className="flex flex-col">
-                  <span
-                    className={`[font-family:'Inter',Helvetica] text-lg tracking-[0] leading-[normal] ${
-                      item.active
-                        ? "font-semibold text-main"
-                        : "font-medium text-text opacity-40"
-                    }`}
-                  >
-                    {item.label}
-                  </span>
-                  {item.comingSoon && (
-                    <span className="[font-family:'Inter',Helvetica] font-medium text-text text-[10px] tracking-[0] leading-[normal] opacity-40">
-                      COMING SOON
+            {item.href.startsWith('/') ? (
+              <Link to={item.href}>
+                <Card
+                  className={`w-[294px] h-[65px] rounded-[10px] cursor-pointer hover:shadow-md transition-shadow ${
+                    item.active
+                      ? "shadow-[0px_5px_16px_-1px_#00000026] opacity-60"
+                      : "opacity-60"
+                  }`}
+                >
+                  <CardContent className="flex items-center gap-3 p-0 h-full px-4">
+                    <img
+                      className="w-[31px] h-[31px]"
+                      alt={item.label}
+                      src={item.icon}
+                    />
+                    <div className="flex flex-col">
+                      <span
+                        className={`[font-family:'Inter',Helvetica] text-lg tracking-[0] leading-[normal] ${
+                          item.active
+                            ? "font-semibold text-main"
+                            : "font-medium text-text opacity-40"
+                        }`}
+                      >
+                        {item.label}
+                      </span>
+                      {item.comingSoon && (
+                        <span className="[font-family:'Inter',Helvetica] font-medium text-text text-[10px] tracking-[0] leading-[normal] opacity-40">
+                          COMING SOON
+                        </span>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : (
+              <Card
+                className={`w-[294px] h-[65px] rounded-[10px] ${
+                  item.active
+                    ? "shadow-[0px_5px_16px_-1px_#00000026] opacity-60"
+                    : "opacity-60"
+                }`}
+              >
+                <CardContent className="flex items-center gap-3 p-0 h-full px-4">
+                  <img
+                    className="w-[31px] h-[31px]"
+                    alt={item.label}
+                    src={item.icon}
+                  />
+                  <div className="flex flex-col">
+                    <span
+                      className={`[font-family:'Inter',Helvetica] text-lg tracking-[0] leading-[normal] ${
+                        item.active
+                          ? "font-semibold text-main"
+                          : "font-medium text-text opacity-40"
+                      }`}
+                    >
+                      {item.label}
                     </span>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
+                    {item.comingSoon && (
+                      <span className="[font-family:'Inter',Helvetica] font-medium text-text text-[10px] tracking-[0] leading-[normal] opacity-40">
+                        COMING SOON
+                      </span>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
         ))}
       </aside>
@@ -619,21 +658,30 @@ export const DripBags = (): JSX.Element => {
                   {section.title}
                 </h3>
                 <ul className="space-y-2">
-                  {section.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                      <a
-                        href="#"
-                        className={`[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:underline ${
-                          section.opacityLinks &&
-                          section.opacityLinks[linkIndex]
-                            ? "opacity-50"
-                            : ""
-                        }`}
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
+                    {section.links.map((link, linkIndex) => (
+                      <li key={linkIndex}>
+                        {link === "Brew Bags" ? (
+                          <Link
+                            to="/brew-bags"
+                            className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                          >
+                            {link}
+                          </Link>
+                        ) : (
+                          <a
+                            href="#"
+                            className={`[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:underline ${
+                              section.opacityLinks &&
+                              section.opacityLinks[linkIndex]
+                                ? "opacity-50"
+                                : ""
+                            }`}
+                          >
+                            {link}
+                          </a>
+                        )}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               ))}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { CoffeeProductsSection } from "./sections/CoffeeProductsSection";
 import { CustomerReviewsSection } from "./sections/CustomerReviewsSection";
@@ -9,7 +10,7 @@ import { PackagingConfiguratorSection } from "./sections/PackagingConfiguratorSe
 const footerLinks = {
   packaging: [
     { label: "Flat Bottom Bags", href: "#" },
-    { label: "Standup Bags", href: "#" },
+    { label: "Standup Bags", href: "/standup-bags" },
     { label: "Carton Boxes", href: "#" },
   ],
   services: [
@@ -24,7 +25,7 @@ const footerLinks = {
     { label: "Return & refund policy", href: "#", disabled: true },
   ],
   aboutUs: [
-    { label: "Who we are", href: "#" },
+    { label: "Who we are", href: "/about-us" },
     { label: "Contact us", href: "#" },
     { label: "Sustainability", href: "#" },
   ],
@@ -60,9 +61,9 @@ const socialLinks = [
 ];
 
 const legalLinks = [
-  { label: "PRIVACY POLICY", href: "#" },
-  { label: "COOKIES", href: "#" },
-  { label: "TERMS & CONDITIONS", href: "#" },
+  { label: "PRIVACY POLICY", href: "/privacy-policy" },
+  { label: "COOKIES", href: "/cookies" },
+  { label: "TERMS & CONDITIONS", href: "/terms-conditions" },
 ];
 
 export const V = (): JSX.Element => {
@@ -125,16 +126,32 @@ export const V = (): JSX.Element => {
                   PACKAGING
                 </h3>
                 <ul className="flex flex-col gap-2">
-                  {footerLinks.packaging.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
+              {footerLinks.packaging.map((link, index) => (
+                <li key={index}>
+                  {link.label === "Carton Boxes" ? (
+                    <Link
+                      to="/carton-boxes"
+                      className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : link.href.startsWith('/') ? (
+                    <Link
+                      to={link.href}
+                      className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )}
+                </li>
+              ))}
                 </ul>
               </div>
 
@@ -143,20 +160,29 @@ export const V = (): JSX.Element => {
                   SERVICES
                 </h3>
                 <ul className="flex flex-col gap-2">
-                  {footerLinks.services.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className={`[font-family:'Inter',Helvetica] font-normal text-sm tracking-[0] leading-6 ${
-                          link.disabled
-                            ? "text-gray cursor-not-allowed"
-                            : "text-text hover:text-main transition-colors"
-                        }`}
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
+              {footerLinks.services.map((link, index) => (
+                <li key={index}>
+                  {link.label === "Brew Bags" ? (
+                    <Link
+                      to="/brew-bags"
+                      className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className={`[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors ${
+                        link.disabled
+                          ? "text-gray cursor-not-allowed"
+                          : "text-text hover:text-main transition-colors"
+                      }`}
+                    >
+                      {link.label}
+                    </a>
+                  )}
+                </li>
+              ))}
                 </ul>
               </div>
 
@@ -185,12 +211,35 @@ export const V = (): JSX.Element => {
                 <ul className="flex flex-col gap-2">
                   {footerLinks.aboutUs.map((link, index) => (
                     <li key={index}>
-                      <a
-                        href={link.href}
-                        className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
-                      >
-                        {link.label}
-                      </a>
+                      {link.href.startsWith('/') ? (
+                        <Link
+                          to={link.href}
+                          className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      ) : link.label === "Sustainability" ? (
+                        <Link
+                          to="/sustainability"
+                          className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      ) : link.label === "Contact us" ? (
+                        <Link
+                          to="/contact-us"
+                          className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      ) : (
+                        <a
+                          href={link.href}
+                          className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -207,13 +256,13 @@ export const V = (): JSX.Element => {
 
             <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
               {legalLinks.map((link, index) => (
-                <a
+                <Link
                   key={index}
-                  href={link.href}
+                  to={link.href}
                   className="[font-family:'Inter',Helvetica] font-medium text-text text-xs sm:text-sm tracking-[0] leading-[30px] hover:text-main transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 

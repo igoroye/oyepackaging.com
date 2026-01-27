@@ -230,29 +230,53 @@ export const FlatBottomBags = (): JSX.Element => {
         )}
       </header>
 
-      <main className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
-        <aside className="hidden xl:flex fixed left-[100px] top-[132px] flex-col gap-[150px]">
-          <Card className="w-[294px] h-[65px] bg-white rounded-[10px] shadow-[0px_5px_16px_-1px_#00000026] opacity-60 flex items-center justify-center">
-            <CardContent className="p-0 flex items-center gap-3">
-              <img
-                className="w-[19px] h-9"
-                alt="Icon"
-                src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-1-1.svg"
-              />
-              <span className="[font-family:'Inter',Helvetica] font-semibold text-main text-lg">
+      <main className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pl-[414px]">
+        <aside className="hidden xl:flex fixed left-[100px] top-[132px] flex-col gap-3 z-40">
+          {/* Active Card - Flat Bottom Bags */}
+          <Card className="w-[294px] h-[88px] bg-[#e8eef5] rounded-[20px] border-0 shadow-none">
+            <CardContent className="flex items-center gap-4 p-0 h-full px-6">
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img
+                  className="w-[31px] h-[31px]"
+                  alt="Flat Bottom Bags Icon"
+                  src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-1-1.svg"
+                />
+              </div>
+              <span className="[font-family:'Inter',Helvetica] font-semibold text-main text-lg tracking-[0] leading-[normal]">
                 FLAT BOTTOM BAGS
               </span>
             </CardContent>
           </Card>
 
-          <Card className="w-[294px] h-[65px] bg-white rounded-[10px] opacity-60 flex items-center justify-center">
-            <CardContent className="p-0 flex items-center gap-3">
-              <img
-                className="w-7 h-[30px]"
-                alt="Icon"
-                src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png"
-              />
-              <span className="[font-family:'Inter',Helvetica] font-medium text-text text-lg opacity-40">
+          {/* Inactive Card - Standup Bags */}
+          <Link to="/standup-bags">
+            <Card className="w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors">
+              <CardContent className="flex items-center gap-4 p-0 h-full px-6">
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    className="w-[31px] h-[31px] opacity-40"
+                    alt="Standup Bags Icon"
+                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png"
+                  />
+                </div>
+                <span className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40">
+                  STANDUP BAGS
+                </span>
+              </CardContent>
+            </Card>
+          </Link>
+
+          {/* Inactive Card - Carton Boxes */}
+          <Card className="w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors">
+            <CardContent className="flex items-center gap-4 p-0 h-full px-6">
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img
+                  className="w-[31px] h-[31px] opacity-40"
+                  alt="Carton Boxes Icon"
+                  src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png"
+                />
+              </div>
+              <span className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40">
                 CARTON BOXES
               </span>
             </CardContent>
@@ -260,77 +284,98 @@ export const FlatBottomBags = (): JSX.Element => {
         </aside>
 
         <section className="pt-8 pb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="relative flex justify-center">
-              <div className="w-full max-w-[400px] h-[380px] bg-bg-beige rounded-[20px] flex items-center justify-center">
+          <div className="flex flex-col lg:flex-row gap-8 items-start justify-between">
+            <div className="relative flex justify-center lg:justify-start flex-shrink-0">
+              <div className="w-full max-w-[550px] h-[450px] bg-bg-beige rounded-[20px] flex items-center justify-center relative">
                 <img
                   className="w-[177px] h-[323px]"
                   alt="Matte coffee bag"
                   src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/matte-coffee-bag-mockup-02-2.png"
                 />
-              </div>
 
-              <div className="absolute top-[10px] left-1/2 -translate-x-1/2 flex items-center gap-2">
-                <Badge className="h-[27px] px-3 py-2 bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm flex items-center gap-[3px]">
-                  <img
-                    className="w-[15px] h-[15px]"
-                    alt="Hand zoom in"
-                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/hand-zoom-in-1.svg"
-                  />
-                  <span className="[font-family:'Inter',Helvetica] font-normal text-text text-[10px]">
-                    HOLD AND ROTATE
-                  </span>
-                </Badge>
+                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 flex items-center gap-2">
+                  <Badge className="h-[27px] px-3 py-2 bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm flex items-center gap-[3px]">
+                    <img
+                      className="w-[15px] h-[15px]"
+                      alt="Hand zoom in"
+                      src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/hand-zoom-in-1.svg"
+                    />
+                    <span className="[font-family:'Inter',Helvetica] font-normal text-text text-[10px]">
+                      HOLD AND ROTATE
+                    </span>
+                  </Badge>
 
-                <div className="w-[27px] h-[27px] bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm rotate-90 flex items-center justify-center">
-                  <img
-                    className="w-[15px] h-[15px]"
-                    alt="Cursor finger click"
-                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/cursor-finger-click-1.svg"
-                  />
+                  <div className="w-[27px] h-[27px] bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm rotate-90 flex items-center justify-center">
+                    <img
+                      className="w-[15px] h-[15px]"
+                      alt="Cursor finger click"
+                      src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/cursor-finger-click-1.svg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <p className="[font-family:'Inter',Helvetica] font-normal text-text text-lg leading-[22px]">
-                  The bag is perfect for coffee roasters, offering various form
-                  factors, EU-made materials, and extensive customization
-                  options. With our configurator, you can create the package of
-                  your dreams 🤩
-                </p>
+            <div className="space-y-6 max-w-[520px]">
+              <h1 className="[font-family:'Inter',Helvetica] font-semibold text-text text-3xl md:text-4xl tracking-[-0.60px] leading-tight">
+                FLAT BOTTOM BAGS
+              </h1>
 
-                <div className="flex flex-wrap gap-4">
-                  {features.map((feature, index) => (
-                    <Badge
-                      key={index}
-                      variant="outline"
-                      className="h-auto px-0 py-0 bg-white rounded-[30px] border-0 flex items-center gap-2.5"
-                    >
-                      <img
-                        className="w-[22px] h-[22px]"
-                        alt={feature}
-                        src={
-                          index === 0
-                            ? "https://c.animaapp.com/mko1bcw3ZdsnAC/img/mug-hot-alt--2--8.svg"
-                            : index === 1
-                              ? "https://c.animaapp.com/mko1bcw3ZdsnAC/img/shield-check-1.svg"
-                              : index === 2
-                                ? "https://c.animaapp.com/mko1bcw3ZdsnAC/img/european-union.svg"
-                                : "https://c.animaapp.com/mko1bcw3ZdsnAC/img/customize-computer-1.svg"
-                        }
-                      />
-                      <span className="[font-family:'Inter',Helvetica] font-medium text-text text-lg">
-                        {feature}
-                      </span>
-                    </Badge>
-                  ))}
+              <p className="[font-family:'Inter',Helvetica] font-normal text-text text-lg leading-[22px]">
+                The bag is perfect for coffee roasters, offering various form
+                factors, EU-made materials, and extensive customization
+                options. With our configurator, you can create the package of
+                your dreams 🤩
+              </p>
+
+              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+                <div className="flex items-center gap-2.5">
+                  <img
+                    className="w-[22px] h-[22px]"
+                    alt="Customization options"
+                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/customize-computer-1.svg"
+                  />
+                  <span className="[font-family:'Inter',Helvetica] font-normal text-text text-base">
+                    Customization options
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2.5">
+                  <img
+                    className="w-[22px] h-[22px]"
+                    alt="Made in Europe"
+                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/european-union.svg"
+                  />
+                  <span className="[font-family:'Inter',Helvetica] font-normal text-text text-base">
+                    Made in Europe
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2.5">
+                  <img
+                    className="w-[22px] h-[22px]"
+                    alt="Innovative materials"
+                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/mug-hot-alt--2--8.svg"
+                  />
+                  <span className="[font-family:'Inter',Helvetica] font-normal text-text text-base">
+                    Innovative materials
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2.5">
+                  <img
+                    className="w-[22px] h-[22px]"
+                    alt="Best coffee protection"
+                    src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/shield-check-1.svg"
+                  />
+                  <span className="[font-family:'Inter',Helvetica] font-normal text-text text-base">
+                    Best coffee protection
+                  </span>
                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <Button className="h-auto px-6 py-4 bg-main rounded-[40px] border-2 border-[#264eab] text-white text-base tracking-[0.48px] [font-family:'Inter',Helvetica] font-medium flex items-center gap-2.5">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="h-auto px-8 py-4 bg-main rounded-[40px] border-2 border-[#264eab] text-white text-base tracking-[0.48px] [font-family:'Inter',Helvetica] font-medium flex items-center justify-center gap-2.5 hover:bg-[#1e3d8f] transition-colors">
                   CONFIGURE PACKAGING
                   <img
                     className="w-2 h-[13px]"
@@ -341,7 +386,7 @@ export const FlatBottomBags = (): JSX.Element => {
 
                 <Button
                   variant="outline"
-                  className="h-auto px-6 py-4 bg-white rounded-[40px] border-2 border-[#264eab] text-main text-base tracking-[0.48px] [font-family:'Inter',Helvetica] font-medium"
+                  className="h-auto px-8 py-4 bg-white rounded-[40px] border-2 border-[#264eab] text-main text-base tracking-[0.48px] [font-family:'Inter',Helvetica] font-medium hover:bg-gray-50 transition-colors"
                 >
                   ORDER SAMPLE KIT
                 </Button>
@@ -350,7 +395,7 @@ export const FlatBottomBags = (): JSX.Element => {
           </div>
         </section>
 
-        <Card className="mb-16 rounded-[20px] border border-[#101014] opacity-30">
+        <Card className="mb-16 rounded-[20px] border border-[#101014]">
           <CardContent className="p-4 sm:p-6 md:p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="flex items-center gap-6">
@@ -393,7 +438,7 @@ export const FlatBottomBags = (): JSX.Element => {
             СUSTOMIZATION OPTIONS
           </h2>
 
-          <Card className="rounded-[20px] border border-[#101014] opacity-30 mb-8">
+          <Card className="rounded-[20px] border border-[#101014] mb-8">
             <CardContent className="p-4 sm:p-6 md:p-8">
               <h3 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg sm:text-[22px] leading-[39px] mb-6">
                 MATERIALS
@@ -481,7 +526,7 @@ export const FlatBottomBags = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="rounded-[20px] border border-[#101014] opacity-30 mb-8">
+          <Card className="rounded-[20px] border border-[#101014] mb-8">
             <CardContent className="p-4 sm:p-6 md:p-8">
               <h3 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg sm:text-[22px] leading-[39px] mb-4">
                 CHOOSE A BAG SIZE
@@ -509,7 +554,7 @@ export const FlatBottomBags = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="rounded-[20px] border border-[#101014] opacity-30 mb-8">
+          <Card className="rounded-[20px] border border-[#101014] mb-8">
             <CardContent className="p-4 sm:p-6 md:p-8">
               <h3 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg sm:text-[22px] leading-[39px] mb-4">
                 PRINT CUSTOMIZATION
@@ -560,7 +605,7 @@ export const FlatBottomBags = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="rounded-[20px] border border-[#101014] opacity-30 mb-8">
+          <Card className="rounded-[20px] border border-[#101014] mb-8">
             <CardContent className="p-4 sm:p-6 md:p-8">
               <h3 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg sm:text-[22px] leading-[39px] mb-4">
                 TOUCH & FEEL CUSTOMIZATION
@@ -590,7 +635,7 @@ export const FlatBottomBags = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="rounded-[20px] border border-[#101014] opacity-30">
+          <Card className="rounded-[20px] border border-[#101014]">
             <CardContent className="p-4 sm:p-6 md:p-8">
               <h3 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg sm:text-[22px] leading-[39px] mb-8">
                 FEATURES
