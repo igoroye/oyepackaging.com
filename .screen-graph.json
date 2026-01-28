@@ -96,738 +96,738 @@
   ],
   "edges": [
     {
-      "id": "src\\screens\\V\\V.tsx:132:20-to-src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "source": "src\\screens\\V\\V.tsx",
-      "target": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
+      "id": "src/screens/V/V.tsx:132:20-to-src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "source": "src/screens/V/V.tsx",
+      "target": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
       "data": {
         "viaRoute": "/carton-boxes",
         "trigger": {
-          "element": "<Link\r\n                      to=\"/carton-boxes\"\r\n                      className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                    >\r\n                      {link.label}\r\n                    </Link>",
+          "element": "<Link\n                      to=\"/carton-boxes\"\n                      className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                    >\n                      {link.label}\n                    </Link>",
           "line": 132,
           "endLine": 137,
           "column": 20,
           "endColumn": 27,
-          "sourceFile": "src\\screens\\V\\V.tsx"
+          "sourceFile": "src/screens/V/V.tsx"
         }
       }
     },
     {
-      "id": "src\\screens\\V\\V.tsx:166:20-to-src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "source": "src\\screens\\V\\V.tsx",
-      "target": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
+      "id": "src/screens/V/V.tsx:166:20-to-src/routes/BrewBags/screens/BrewBags.tsx",
+      "source": "src/screens/V/V.tsx",
+      "target": "src/routes/BrewBags/screens/BrewBags.tsx",
       "data": {
         "viaRoute": "/brew-bags",
         "trigger": {
-          "element": "<Link\r\n                      to=\"/brew-bags\"\r\n                      className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                    >\r\n                      {link.label}\r\n                    </Link>",
+          "element": "<Link\n                      to=\"/brew-bags\"\n                      className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                    >\n                      {link.label}\n                    </Link>",
           "line": 166,
           "endLine": 171,
           "column": 20,
           "endColumn": 27,
-          "sourceFile": "src\\screens\\V\\V.tsx"
+          "sourceFile": "src/screens/V/V.tsx"
         }
       }
     },
     {
-      "id": "src\\screens\\V\\V.tsx:222:24-to-src\\routes\\Sustainability\\screens\\Sustainability.tsx",
-      "source": "src\\screens\\V\\V.tsx",
-      "target": "src\\routes\\Sustainability\\screens\\Sustainability.tsx",
+      "id": "src/screens/V/V.tsx:222:24-to-src/routes/Sustainability/screens/Sustainability.tsx",
+      "source": "src/screens/V/V.tsx",
+      "target": "src/routes/Sustainability/screens/Sustainability.tsx",
       "data": {
         "viaRoute": "/sustainability",
         "trigger": {
-          "element": "<Link\r\n                          to=\"/sustainability\"\r\n                          className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                        >\r\n                          {link.label}\r\n                        </Link>",
+          "element": "<Link\n                          to=\"/sustainability\"\n                          className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                        >\n                          {link.label}\n                        </Link>",
           "line": 222,
           "endLine": 227,
           "column": 24,
           "endColumn": 31,
-          "sourceFile": "src\\screens\\V\\V.tsx"
+          "sourceFile": "src/screens/V/V.tsx"
         }
       }
     },
     {
-      "id": "src\\screens\\V\\V.tsx:229:24-to-src\\routes\\ContactUs\\screens\\ContactUs.tsx",
-      "source": "src\\screens\\V\\V.tsx",
-      "target": "src\\routes\\ContactUs\\screens\\ContactUs.tsx",
+      "id": "src/screens/V/V.tsx:229:24-to-src/routes/ContactUs/screens/ContactUs.tsx",
+      "source": "src/screens/V/V.tsx",
+      "target": "src/routes/ContactUs/screens/ContactUs.tsx",
       "data": {
         "viaRoute": "/contact-us",
         "trigger": {
-          "element": "<Link\r\n                          to=\"/contact-us\"\r\n                          className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                        >\r\n                          {link.label}\r\n                        </Link>",
+          "element": "<Link\n                          to=\"/contact-us\"\n                          className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                        >\n                          {link.label}\n                        </Link>",
           "line": 229,
           "endLine": 234,
           "column": 24,
           "endColumn": 31,
-          "sourceFile": "src\\screens\\V\\V.tsx"
+          "sourceFile": "src/screens/V/V.tsx"
         }
       }
     },
     {
-      "id": "src\\screens\\V\\sections\\NavigationBarSection\\NavigationBarSection.tsx:18:8-to-src\\screens\\V\\V.tsx",
-      "source": "src\\screens\\V\\V.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/screens/V/sections/NavigationBarSection/NavigationBarSection.tsx:18:8-to-src/screens/V/V.tsx",
+      "source": "src/screens/V/V.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n          <img\r\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n            alt=\"ÖYE Logo\"\r\n            src=\"https://c.animaapp.com/mko0yo41F03JfF/img/group-239.png\"\r\n          />\r\n        </Link>",
+          "element": "<Link to=\"/\">\n          <img\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n            alt=\"ÖYE Logo\"\n            src=\"https://c.animaapp.com/mko0yo41F03JfF/img/group-239.png\"\n          />\n        </Link>",
           "line": 18,
           "endLine": 24,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\screens\\V\\sections\\NavigationBarSection\\NavigationBarSection.tsx"
+          "sourceFile": "src/screens/V/sections/NavigationBarSection/NavigationBarSection.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx:143:10-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx:143:10-to-src/screens/V/V.tsx",
+      "source": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n            <img\r\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n              alt=\"ÖYE Logo\"\r\n              src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/group-239.png\"\r\n            />\r\n          </Link>",
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n              alt=\"ÖYE Logo\"\n              src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/group-239.png\"\n            />\n          </Link>",
           "line": 143,
           "endLine": 149,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx"
+          "sourceFile": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx:153:12-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx:153:12-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n              to=\"/products\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              PRODUCTS\r\n            </Link>",
+          "element": "<Link\n              to=\"/products\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              PRODUCTS\n            </Link>",
           "line": 153,
           "endLine": 158,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx"
+          "sourceFile": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx:199:14-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx:199:14-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                to=\"/products\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                PRODUCTS\r\n              </Link>",
+          "element": "<Link\n                to=\"/products\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                PRODUCTS\n              </Link>",
           "line": 199,
           "endLine": 205,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx"
+          "sourceFile": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx:252:10-to-src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "source": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "target": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
+      "id": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx:252:10-to-src/routes/StandupBags/screens/StandupBags.tsx",
+      "source": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "target": "src/routes/StandupBags/screens/StandupBags.tsx",
       "data": {
         "viaRoute": "/standup-bags",
         "trigger": {
-          "element": "<Link to=\"/standup-bags\">\r\n            <Card className=\"w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors\">\r\n              <CardContent className=\"flex items-center gap-4 p-0 h-full px-6\">\r\n                <div className=\"w-10 h-10 flex items-center justify-center\">\r\n                  <img\r\n                    className=\"w-[31px] h-[31px] opacity-40\"\r\n                    alt=\"Standup Bags Icon\"\r\n                    src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png\"\r\n                  />\r\n                </div>\r\n                <span className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40\">\r\n                  STANDUP BAGS\r\n                </span>\r\n              </CardContent>\r\n            </Card>\r\n          </Link>",
+          "element": "<Link to=\"/standup-bags\">\n            <Card className=\"w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors\">\n              <CardContent className=\"flex items-center gap-4 p-0 h-full px-6\">\n                <div className=\"w-10 h-10 flex items-center justify-center\">\n                  <img\n                    className=\"w-[31px] h-[31px] opacity-40\"\n                    alt=\"Standup Bags Icon\"\n                    src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png\"\n                  />\n                </div>\n                <span className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40\">\n                  STANDUP BAGS\n                </span>\n              </CardContent>\n            </Card>\n          </Link>",
           "line": 252,
           "endLine": 267,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx"
+          "sourceFile": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\DripBags\\screens\\DripBags.tsx:167:10-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/DripBags/screens/DripBags.tsx:167:10-to-src/screens/V/V.tsx",
+      "source": "src/routes/DripBags/screens/DripBags.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n            <img\r\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n              alt=\"ÖYE Logo\"\r\n              src=\"https://c.animaapp.com/mkqxfu3aXzgBiS/img/group-239.png\"\r\n            />\r\n          </Link>",
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n              alt=\"ÖYE Logo\"\n              src=\"https://c.animaapp.com/mkqxfu3aXzgBiS/img/group-239.png\"\n            />\n          </Link>",
           "line": 167,
           "endLine": 173,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\DripBags\\screens\\DripBags.tsx"
+          "sourceFile": "src/routes/DripBags/screens/DripBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\DripBags\\screens\\DripBags.tsx:177:12-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/DripBags/screens/DripBags.tsx:177:12-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/DripBags/screens/DripBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n              to=\"/products\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              PRODUCTS\r\n            </Link>",
+          "element": "<Link\n              to=\"/products\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              PRODUCTS\n            </Link>",
           "line": 177,
           "endLine": 182,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\DripBags\\screens\\DripBags.tsx"
+          "sourceFile": "src/routes/DripBags/screens/DripBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\DripBags\\screens\\DripBags.tsx:183:12-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/DripBags/screens/DripBags.tsx:183:12-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/DripBags/screens/DripBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n              to=\"/services\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              SERVICES\r\n            </Link>",
+          "element": "<Link\n              to=\"/services\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              SERVICES\n            </Link>",
           "line": 183,
           "endLine": 188,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\DripBags\\screens\\DripBags.tsx"
+          "sourceFile": "src/routes/DripBags/screens/DripBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\DripBags\\screens\\DripBags.tsx:223:14-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/DripBags/screens/DripBags.tsx:223:14-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/DripBags/screens/DripBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                to=\"/products\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                PRODUCTS\r\n              </Link>",
+          "element": "<Link\n                to=\"/products\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                PRODUCTS\n              </Link>",
           "line": 223,
           "endLine": 229,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\DripBags\\screens\\DripBags.tsx"
+          "sourceFile": "src/routes/DripBags/screens/DripBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\DripBags\\screens\\DripBags.tsx:230:14-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/DripBags/screens/DripBags.tsx:230:14-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/DripBags/screens/DripBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                to=\"/services\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                SERVICES\r\n              </Link>",
+          "element": "<Link\n                to=\"/services\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                SERVICES\n              </Link>",
           "line": 230,
           "endLine": 236,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\DripBags\\screens\\DripBags.tsx"
+          "sourceFile": "src/routes/DripBags/screens/DripBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\DripBags\\screens\\DripBags.tsx:664:26-to-src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "source": "src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "target": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
+      "id": "src/routes/DripBags/screens/DripBags.tsx:664:26-to-src/routes/BrewBags/screens/BrewBags.tsx",
+      "source": "src/routes/DripBags/screens/DripBags.tsx",
+      "target": "src/routes/BrewBags/screens/BrewBags.tsx",
       "data": {
         "viaRoute": "/brew-bags",
         "trigger": {
-          "element": "<Link\r\n                            to=\"/brew-bags\"\r\n                            className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                          >\r\n                            {link}\r\n                          </Link>",
+          "element": "<Link\n                            to=\"/brew-bags\"\n                            className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                          >\n                            {link}\n                          </Link>",
           "line": 664,
           "endLine": 669,
           "column": 26,
           "endColumn": 33,
-          "sourceFile": "src\\routes\\DripBags\\screens\\DripBags.tsx"
+          "sourceFile": "src/routes/DripBags/screens/DripBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\AboutUs\\screens\\sections\\HeroSection.tsx:18:8-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\AboutUs\\screens\\AboutUs.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/AboutUs/screens/sections/HeroSection.tsx:18:8-to-src/screens/V/V.tsx",
+      "source": "src/routes/AboutUs/screens/AboutUs.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n          <img\r\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n            alt=\"ÖYE Logo\"\r\n            src=\"https://c.animaapp.com/mkvbxc2okqfhzF/img/group-239.png\"\r\n          />\r\n        </Link>",
+          "element": "<Link to=\"/\">\n          <img\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n            alt=\"ÖYE Logo\"\n            src=\"https://c.animaapp.com/mkvbxc2okqfhzF/img/group-239.png\"\n          />\n        </Link>",
           "line": 18,
           "endLine": 24,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\routes\\AboutUs\\screens\\sections\\HeroSection.tsx"
+          "sourceFile": "src/routes/AboutUs/screens/sections/HeroSection.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:129:20-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:129:20-to-src/screens/V/V.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n                        <img\r\n                            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n                            alt=\"ÖYE Logo\"\r\n                            src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/group-239.png\"\r\n                        />\r\n                    </Link>",
+          "element": "<Link to=\"/\">\n                        <img\n                            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n                            alt=\"ÖYE Logo\"\n                            src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/group-239.png\"\n                        />\n                    </Link>",
           "line": 129,
           "endLine": 135,
           "column": 20,
           "endColumn": 27,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:139:24-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:139:24-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                            to=\"/products\"\r\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n                        >\r\n                            PRODUCTS\r\n                        </Link>",
+          "element": "<Link\n                            to=\"/products\"\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n                        >\n                            PRODUCTS\n                        </Link>",
           "line": 139,
           "endLine": 144,
           "column": 24,
           "endColumn": 31,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:145:24-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:145:24-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                            to=\"/services\"\r\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n                        >\r\n                            SERVICES\r\n                        </Link>",
+          "element": "<Link\n                            to=\"/services\"\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n                        >\n                            SERVICES\n                        </Link>",
           "line": 145,
           "endLine": 150,
           "column": 24,
           "endColumn": 31,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:185:28-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:185:28-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                                to=\"/products\"\r\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                                onClick={() => setMobileMenuOpen(false)}\r\n                            >\r\n                                PRODUCTS\r\n                            </Link>",
+          "element": "<Link\n                                to=\"/products\"\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                                onClick={() => setMobileMenuOpen(false)}\n                            >\n                                PRODUCTS\n                            </Link>",
           "line": 185,
           "endLine": 191,
           "column": 28,
           "endColumn": 35,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:192:28-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:192:28-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                                to=\"/services\"\r\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                            >\r\n                                SERVICES\r\n                            </Link>",
+          "element": "<Link\n                                to=\"/services\"\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                            >\n                                SERVICES\n                            </Link>",
           "line": 192,
           "endLine": 197,
           "column": 28,
           "endColumn": 35,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:222:20-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:222:20-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link to=\"/products\">\r\n                        <Card className=\"w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors\">\r\n                            <CardContent className=\"flex items-center gap-4 p-0 h-full px-6\">\r\n                                <div className=\"w-10 h-10 flex items-center justify-center\">\r\n                                    <img\r\n                                        className=\"w-[31px] h-[31px] opacity-40\"\r\n                                        alt=\"Flat Bottom Bags Icon\"\r\n                                        src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-1-1.svg\"\r\n                                    />\r\n                                </div>\r\n                                <span className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40\">\r\n                                    FLAT BOTTOM BAGS\r\n                                </span>\r\n                            </CardContent>\r\n                        </Card>\r\n                    </Link>",
+          "element": "<Link to=\"/products\">\n                        <Card className=\"w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors\">\n                            <CardContent className=\"flex items-center gap-4 p-0 h-full px-6\">\n                                <div className=\"w-10 h-10 flex items-center justify-center\">\n                                    <img\n                                        className=\"w-[31px] h-[31px] opacity-40\"\n                                        alt=\"Flat Bottom Bags Icon\"\n                                        src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-1-1.svg\"\n                                    />\n                                </div>\n                                <span className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40\">\n                                    FLAT BOTTOM BAGS\n                                </span>\n                            </CardContent>\n                        </Card>\n                    </Link>",
           "line": 222,
           "endLine": 237,
           "column": 20,
           "endColumn": 27,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\StandupBags\\screens\\StandupBags.tsx:256:20-to-src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "source": "src\\routes\\StandupBags\\screens\\StandupBags.tsx",
-      "target": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
+      "id": "src/routes/StandupBags/screens/StandupBags.tsx:256:20-to-src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "source": "src/routes/StandupBags/screens/StandupBags.tsx",
+      "target": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
       "data": {
         "viaRoute": "/carton-boxes",
         "trigger": {
-          "element": "<Link to=\"/carton-boxes\">\r\n                        <Card className=\"w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors\">\r\n                            <CardContent className=\"flex items-center gap-4 p-0 h-full px-6\">\r\n                                <div className=\"w-10 h-10 flex items-center justify-center\">\r\n                                    <img\r\n                                        className=\"w-[31px] h-[31px] opacity-40\"\r\n                                        alt=\"Carton Boxes Icon\"\r\n                                        src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png\" // reused icon\r\n                                    />\r\n                                </div>\r\n                                <span className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40\">\r\n                                    CARTON BOXES\r\n                                </span>\r\n                            </CardContent>\r\n                        </Card>\r\n                    </Link>",
+          "element": "<Link to=\"/carton-boxes\">\n                        <Card className=\"w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors\">\n                            <CardContent className=\"flex items-center gap-4 p-0 h-full px-6\">\n                                <div className=\"w-10 h-10 flex items-center justify-center\">\n                                    <img\n                                        className=\"w-[31px] h-[31px] opacity-40\"\n                                        alt=\"Carton Boxes Icon\"\n                                        src=\"https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-2.png\" // reused icon\n                                    />\n                                </div>\n                                <span className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] opacity-40\">\n                                    CARTON BOXES\n                                </span>\n                            </CardContent>\n                        </Card>\n                    </Link>",
           "line": 256,
           "endLine": 271,
           "column": 20,
           "endColumn": 27,
-          "sourceFile": "src\\routes\\StandupBags\\screens\\StandupBags.tsx"
+          "sourceFile": "src/routes/StandupBags/screens/StandupBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx:190:20-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/CartonBoxes/screens/CartonBoxes.tsx:190:20-to-src/screens/V/V.tsx",
+      "source": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n                        <img\r\n                            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n                            alt=\"ÖYE Logo\"\r\n                            src=\"https://c.animaapp.com/mkve5d5vXaRKB0/img/group-239.png\"\r\n                        />\r\n                    </Link>",
+          "element": "<Link to=\"/\">\n                        <img\n                            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n                            alt=\"ÖYE Logo\"\n                            src=\"https://c.animaapp.com/mkve5d5vXaRKB0/img/group-239.png\"\n                        />\n                    </Link>",
           "line": 190,
           "endLine": 196,
           "column": 20,
           "endColumn": 27,
-          "sourceFile": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx"
+          "sourceFile": "src/routes/CartonBoxes/screens/CartonBoxes.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx:200:24-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/CartonBoxes/screens/CartonBoxes.tsx:200:24-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                            to=\"/products\"\r\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n                        >\r\n                            PRODUCTS\r\n                        </Link>",
+          "element": "<Link\n                            to=\"/products\"\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n                        >\n                            PRODUCTS\n                        </Link>",
           "line": 200,
           "endLine": 205,
           "column": 24,
           "endColumn": 31,
-          "sourceFile": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx"
+          "sourceFile": "src/routes/CartonBoxes/screens/CartonBoxes.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx:206:24-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/CartonBoxes/screens/CartonBoxes.tsx:206:24-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                            to=\"/services\"\r\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n                        >\r\n                            SERVICES\r\n                        </Link>",
+          "element": "<Link\n                            to=\"/services\"\n                            className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n                        >\n                            SERVICES\n                        </Link>",
           "line": 206,
           "endLine": 211,
           "column": 24,
           "endColumn": 31,
-          "sourceFile": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx"
+          "sourceFile": "src/routes/CartonBoxes/screens/CartonBoxes.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx:246:28-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/CartonBoxes/screens/CartonBoxes.tsx:246:28-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                                to=\"/products\"\r\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                                onClick={() => setMobileMenuOpen(false)}\r\n                            >\r\n                                PRODUCTS\r\n                            </Link>",
+          "element": "<Link\n                                to=\"/products\"\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                                onClick={() => setMobileMenuOpen(false)}\n                            >\n                                PRODUCTS\n                            </Link>",
           "line": 246,
           "endLine": 252,
           "column": 28,
           "endColumn": 35,
-          "sourceFile": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx"
+          "sourceFile": "src/routes/CartonBoxes/screens/CartonBoxes.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx:253:28-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/CartonBoxes/screens/CartonBoxes.tsx:253:28-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                                to=\"/services\"\r\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                                onClick={() => setMobileMenuOpen(false)}\r\n                            >\r\n                                SERVICES\r\n                            </Link>",
+          "element": "<Link\n                                to=\"/services\"\n                                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                                onClick={() => setMobileMenuOpen(false)}\n                            >\n                                SERVICES\n                            </Link>",
           "line": 253,
           "endLine": 259,
           "column": 28,
           "endColumn": 35,
-          "sourceFile": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx"
+          "sourceFile": "src/routes/CartonBoxes/screens/CartonBoxes.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx:790:48-to-src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "source": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
-      "target": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx",
+      "id": "src/routes/CartonBoxes/screens/CartonBoxes.tsx:790:48-to-src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "source": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
+      "target": "src/routes/CartonBoxes/screens/CartonBoxes.tsx",
       "data": {
         "viaRoute": "/carton-boxes",
         "trigger": {
-          "element": "<Link\r\n                                                    to=\"/carton-boxes\"\r\n                                                    className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                                                >\r\n                                                    {link}\r\n                                                </Link>",
+          "element": "<Link\n                                                    to=\"/carton-boxes\"\n                                                    className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                                                >\n                                                    {link}\n                                                </Link>",
           "line": 790,
           "endLine": 795,
           "column": 48,
           "endColumn": 55,
-          "sourceFile": "src\\routes\\CartonBoxes\\screens\\CartonBoxes.tsx"
+          "sourceFile": "src/routes/CartonBoxes/screens/CartonBoxes.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\BrewBags\\screens\\BrewBags.tsx:170:10-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/BrewBags/screens/BrewBags.tsx:170:10-to-src/screens/V/V.tsx",
+      "source": "src/routes/BrewBags/screens/BrewBags.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n            <img\r\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n              alt=\"ÖYE Logo\"\r\n              src=\"https://c.animaapp.com/mkvdixiwyRK4ZE/img/group-239.png\"\r\n            />\r\n          </Link>",
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n              alt=\"ÖYE Logo\"\n              src=\"https://c.animaapp.com/mkvdixiwyRK4ZE/img/group-239.png\"\n            />\n          </Link>",
           "line": 170,
           "endLine": 176,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\BrewBags\\screens\\BrewBags.tsx"
+          "sourceFile": "src/routes/BrewBags/screens/BrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\BrewBags\\screens\\BrewBags.tsx:180:12-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/BrewBags/screens/BrewBags.tsx:180:12-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/BrewBags/screens/BrewBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n              to=\"/products\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              PRODUCTS\r\n            </Link>",
+          "element": "<Link\n              to=\"/products\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              PRODUCTS\n            </Link>",
           "line": 180,
           "endLine": 185,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\BrewBags\\screens\\BrewBags.tsx"
+          "sourceFile": "src/routes/BrewBags/screens/BrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\BrewBags\\screens\\BrewBags.tsx:186:12-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/BrewBags/screens/BrewBags.tsx:186:12-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/BrewBags/screens/BrewBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n              to=\"/services\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              SERVICES\r\n            </Link>",
+          "element": "<Link\n              to=\"/services\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              SERVICES\n            </Link>",
           "line": 186,
           "endLine": 191,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\BrewBags\\screens\\BrewBags.tsx"
+          "sourceFile": "src/routes/BrewBags/screens/BrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\BrewBags\\screens\\BrewBags.tsx:226:14-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/BrewBags/screens/BrewBags.tsx:226:14-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/BrewBags/screens/BrewBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                to=\"/products\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                PRODUCTS\r\n              </Link>",
+          "element": "<Link\n                to=\"/products\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                PRODUCTS\n              </Link>",
           "line": 226,
           "endLine": 232,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\BrewBags\\screens\\BrewBags.tsx"
+          "sourceFile": "src/routes/BrewBags/screens/BrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\BrewBags\\screens\\BrewBags.tsx:233:14-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/BrewBags/screens/BrewBags.tsx:233:14-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/BrewBags/screens/BrewBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                to=\"/services\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                SERVICES\r\n              </Link>",
+          "element": "<Link\n                to=\"/services\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                SERVICES\n              </Link>",
           "line": 233,
           "endLine": 239,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\BrewBags\\screens\\BrewBags.tsx"
+          "sourceFile": "src/routes/BrewBags/screens/BrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\BrewBags\\screens\\BrewBags.tsx:673:26-to-src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "source": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
-      "target": "src\\routes\\BrewBags\\screens\\BrewBags.tsx",
+      "id": "src/routes/BrewBags/screens/BrewBags.tsx:673:26-to-src/routes/BrewBags/screens/BrewBags.tsx",
+      "source": "src/routes/BrewBags/screens/BrewBags.tsx",
+      "target": "src/routes/BrewBags/screens/BrewBags.tsx",
       "data": {
         "viaRoute": "/brew-bags",
         "trigger": {
-          "element": "<Link\r\n                            to=\"/brew-bags\"\r\n                            className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\r\n                          >\r\n                            {link}\r\n                          </Link>",
+          "element": "<Link\n                            to=\"/brew-bags\"\n                            className=\"[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors\"\n                          >\n                            {link}\n                          </Link>",
           "line": 673,
           "endLine": 678,
           "column": 26,
           "endColumn": 33,
-          "sourceFile": "src\\routes\\BrewBags\\screens\\BrewBags.tsx"
+          "sourceFile": "src/routes/BrewBags/screens/BrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx:177:10-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx:177:10-to-src/screens/V/V.tsx",
+      "source": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n            <img\r\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n              alt=\"ÖYE Logo\"\r\n              src=\"https://c.animaapp.com/mkvdupvcUy2tgs/img/group-239.png\"\r\n            />\r\n          </Link>",
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n              alt=\"ÖYE Logo\"\n              src=\"https://c.animaapp.com/mkvdupvcUy2tgs/img/group-239.png\"\n            />\n          </Link>",
           "line": 177,
           "endLine": 183,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx"
+          "sourceFile": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx:187:12-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx:187:12-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n              to=\"/products\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              PRODUCTS\r\n            </Link>",
+          "element": "<Link\n              to=\"/products\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              PRODUCTS\n            </Link>",
           "line": 187,
           "endLine": 192,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx"
+          "sourceFile": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx:193:12-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx:193:12-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n              to=\"/services\"\r\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\r\n            >\r\n              SERVICES\r\n            </Link>",
+          "element": "<Link\n              to=\"/services\"\n              className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors\"\n            >\n              SERVICES\n            </Link>",
           "line": 193,
           "endLine": 198,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx"
+          "sourceFile": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx:233:14-to-src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
-      "source": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx",
-      "target": "src\\routes\\FlatBottomBags\\screens\\FlatBottomBags.tsx",
+      "id": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx:233:14-to-src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
+      "source": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx",
+      "target": "src/routes/FlatBottomBags/screens/FlatBottomBags.tsx",
       "data": {
         "viaRoute": "/products",
         "trigger": {
-          "element": "<Link\r\n                to=\"/products\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                PRODUCTS\r\n              </Link>",
+          "element": "<Link\n                to=\"/products\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                PRODUCTS\n              </Link>",
           "line": 233,
           "endLine": 239,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx"
+          "sourceFile": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx:240:14-to-src\\routes\\DripBags\\screens\\DripBags.tsx",
-      "source": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx",
-      "target": "src\\routes\\DripBags\\screens\\DripBags.tsx",
+      "id": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx:240:14-to-src/routes/DripBags/screens/DripBags.tsx",
+      "source": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx",
+      "target": "src/routes/DripBags/screens/DripBags.tsx",
       "data": {
         "viaRoute": "/services",
         "trigger": {
-          "element": "<Link\r\n                to=\"/services\"\r\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\r\n                onClick={() => setMobileMenuOpen(false)}\r\n              >\r\n                SERVICES\r\n              </Link>",
+          "element": "<Link\n                to=\"/services\"\n                className=\"[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2\"\n                onClick={() => setMobileMenuOpen(false)}\n              >\n                SERVICES\n              </Link>",
           "line": 240,
           "endLine": 246,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src\\routes\\ColdBrewBags\\screens\\ColdBrewBags.tsx"
+          "sourceFile": "src/routes/ColdBrewBags/screens/ColdBrewBags.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\Sustainability\\screens\\sections\\HeroSection.tsx:18:8-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\Sustainability\\screens\\Sustainability.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/Sustainability/screens/sections/HeroSection.tsx:18:8-to-src/screens/V/V.tsx",
+      "source": "src/routes/Sustainability/screens/Sustainability.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n          <img\r\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n            alt=\"ÖYE Logo\"\r\n            src=\"https://c.animaapp.com/mkved9hrg5UXzm/img/group-239.png\"\r\n          />\r\n        </Link>",
+          "element": "<Link to=\"/\">\n          <img\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n            alt=\"ÖYE Logo\"\n            src=\"https://c.animaapp.com/mkved9hrg5UXzm/img/group-239.png\"\n          />\n        </Link>",
           "line": 18,
           "endLine": 24,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\routes\\Sustainability\\screens\\sections\\HeroSection.tsx"
+          "sourceFile": "src/routes/Sustainability/screens/sections/HeroSection.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\ContactUs\\screens\\sections\\NavigationBarSection.tsx:18:8-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\ContactUs\\screens\\ContactUs.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/ContactUs/screens/sections/NavigationBarSection.tsx:18:8-to-src/screens/V/V.tsx",
+      "source": "src/routes/ContactUs/screens/ContactUs.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n          <img\r\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n            alt=\"ÖYE Logo\"\r\n            src=\"https://c.animaapp.com/mkvehh2nHV8P1S/img/group-239.png\"\r\n          />\r\n        </Link>",
+          "element": "<Link to=\"/\">\n          <img\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n            alt=\"ÖYE Logo\"\n            src=\"https://c.animaapp.com/mkvehh2nHV8P1S/img/group-239.png\"\n          />\n        </Link>",
           "line": 18,
           "endLine": 24,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\routes\\ContactUs\\screens\\sections\\NavigationBarSection.tsx"
+          "sourceFile": "src/routes/ContactUs/screens/sections/NavigationBarSection.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx:86:10-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx:86:10-to-src/screens/V/V.tsx",
+      "source": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n            <img\r\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n              alt=\"ÖYE Logo\"\r\n              src=\"https://c.animaapp.com/mkvenfnf8hUqCs/img/group-239.png\"\r\n            />\r\n          </Link>",
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n              alt=\"ÖYE Logo\"\n              src=\"https://c.animaapp.com/mkvenfnf8hUqCs/img/group-239.png\"\n            />\n          </Link>",
           "line": 86,
           "endLine": 92,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx"
+          "sourceFile": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx:301:16-to-src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx",
-      "source": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx",
-      "target": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx",
+      "id": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx:301:16-to-src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx",
+      "source": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx",
+      "target": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx",
       "data": {
         "viaRoute": "/privacy-policy",
         "trigger": {
-          "element": "<Link\r\n                  to=\"/privacy-policy\"\r\n                  className=\"[font-family:'Inter',Helvetica] font-medium text-text text-sm tracking-[0] leading-[30px] hover:text-main transition-colors\"\r\n                >\r\n                  PRIVACY POLICY\r\n                </Link>",
+          "element": "<Link\n                  to=\"/privacy-policy\"\n                  className=\"[font-family:'Inter',Helvetica] font-medium text-text text-sm tracking-[0] leading-[30px] hover:text-main transition-colors\"\n                >\n                  PRIVACY POLICY\n                </Link>",
           "line": 301,
           "endLine": 306,
           "column": 16,
           "endColumn": 23,
-          "sourceFile": "src\\routes\\PrivacyPolicy\\screens\\PrivacyPolicy.tsx"
+          "sourceFile": "src/routes/PrivacyPolicy/screens/PrivacyPolicy.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\TermsAndConditions\\screens\\TermsAndConditions.tsx:182:10-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\TermsAndConditions\\screens\\TermsAndConditions.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/TermsAndConditions/screens/TermsAndConditions.tsx:182:10-to-src/screens/V/V.tsx",
+      "source": "src/routes/TermsAndConditions/screens/TermsAndConditions.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n            <img\r\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n              alt=\"ÖYE Logo\"\r\n              src=\"https://c.animaapp.com/mkves8ujwpN2sJ/img/group-239.png\"\r\n            />\r\n          </Link>",
+          "element": "<Link to=\"/\">\n            <img\n              className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n              alt=\"ÖYE Logo\"\n              src=\"https://c.animaapp.com/mkves8ujwpN2sJ/img/group-239.png\"\n            />\n          </Link>",
           "line": 182,
           "endLine": 188,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src\\routes\\TermsAndConditions\\screens\\TermsAndConditions.tsx"
+          "sourceFile": "src/routes/TermsAndConditions/screens/TermsAndConditions.tsx"
         }
       }
     },
     {
-      "id": "src\\routes\\CookiePolicy\\screens\\sections\\MainHeaderSection.tsx:18:8-to-src\\screens\\V\\V.tsx",
-      "source": "src\\routes\\CookiePolicy\\screens\\CookiePolicy.tsx",
-      "target": "src\\screens\\V\\V.tsx",
+      "id": "src/routes/CookiePolicy/screens/sections/MainHeaderSection.tsx:18:8-to-src/screens/V/V.tsx",
+      "source": "src/routes/CookiePolicy/screens/CookiePolicy.tsx",
+      "target": "src/screens/V/V.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
-          "element": "<Link to=\"/\">\r\n          <img\r\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\r\n            alt=\"ÖYE Logo\"\r\n            src=\"https://c.animaapp.com/mkveyannrOLJuY/img/group-239.png\"\r\n          />\r\n        </Link>",
+          "element": "<Link to=\"/\">\n          <img\n            className=\"w-[100px] sm:w-[125px] h-auto cursor-pointer\"\n            alt=\"ÖYE Logo\"\n            src=\"https://c.animaapp.com/mkveyannrOLJuY/img/group-239.png\"\n          />\n        </Link>",
           "line": 18,
           "endLine": 24,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src\\routes\\CookiePolicy\\screens\\sections\\MainHeaderSection.tsx"
+          "sourceFile": "src/routes/CookiePolicy/screens/sections/MainHeaderSection.tsx"
         }
       }
     }
