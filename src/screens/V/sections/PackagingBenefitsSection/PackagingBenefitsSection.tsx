@@ -43,28 +43,39 @@ const benefitsData = [
 ];
 
 export const PackagingBenefitsSection = (): JSX.Element => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const desktopScrollContainerRef = useRef<HTMLDivElement>(null);
+  const mobileScrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
+  const getActiveContainer = () => {
+    // Check if desktop container is visible (width > 0 and not hidden)
+    if (desktopScrollContainerRef.current && desktopScrollContainerRef.current.offsetParent) {
+      return desktopScrollContainerRef.current;
+    }
+    return mobileScrollContainerRef.current;
+  };
+
   const checkScrollButtons = () => {
-    if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+    const container = getActiveContainer();
+    if (container) {
+      const { scrollLeft, scrollWidth, clientWidth } = container;
       setCanScrollLeft(scrollLeft > 0);
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
     }
   };
 
   const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
+    const container = getActiveContainer();
+    if (container) {
       const cardWidth = 380; // Approximate card width + gap
       const scrollAmount = cardWidth;
       const newScrollLeft =
         direction === "left"
-          ? scrollContainerRef.current.scrollLeft - scrollAmount
-          : scrollContainerRef.current.scrollLeft + scrollAmount;
+          ? container.scrollLeft - scrollAmount
+          : container.scrollLeft + scrollAmount;
 
-      scrollContainerRef.current.scrollTo({
+      container.scrollTo({
         left: newScrollLeft,
         behavior: "smooth",
       });
@@ -84,7 +95,7 @@ export const PackagingBenefitsSection = (): JSX.Element => {
         {/* Desktop: 3 Cards Visible + Partial 4th Card */}
         <div className="hidden lg:block relative">
           <div
-            ref={scrollContainerRef}
+            ref={desktopScrollContainerRef}
             onScroll={checkScrollButtons}
             className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -92,9 +103,8 @@ export const PackagingBenefitsSection = (): JSX.Element => {
             {benefitsData.map((benefit, index) => (
               <Card
                 key={index}
-                className={`bg-white rounded-[30px] w-[360px] h-[280px] flex-shrink-0 transition-[transform,box-shadow] hover:shadow-lg hover:-translate-y-1 translate-y-[-1rem] animate-fade-in opacity-0 ${
-                  benefit.highlighted ? "border-2 border-[#264eab]" : "border border-transparent"
-                }`}
+                className={`bg-white rounded-[30px] w-[360px] h-[280px] flex-shrink-0 transition-[transform,box-shadow] hover:shadow-lg hover:-translate-y-1 translate-y-[-1rem] animate-fade-in opacity-0 ${benefit.highlighted ? "border-2 border-[#264eab]" : "border border-transparent"
+                  }`}
                 style={
                   {
                     "--animation-delay": `${(index + 1) * 200}ms`,
@@ -150,7 +160,7 @@ export const PackagingBenefitsSection = (): JSX.Element => {
         {/* Mobile/Tablet Slider View */}
         <div className="lg:hidden relative">
           <div
-            ref={scrollContainerRef}
+            ref={mobileScrollContainerRef}
             onScroll={checkScrollButtons}
             className="flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -158,9 +168,8 @@ export const PackagingBenefitsSection = (): JSX.Element => {
             {benefitsData.map((benefit, index) => (
               <Card
                 key={index}
-                className={`bg-white rounded-[30px] min-w-[280px] sm:min-w-[320px] md:min-w-[360px] h-[280px] snap-start transition-[transform,box-shadow] hover:shadow-lg ${
-                  benefit.highlighted ? "border-2 border-[#264eab]" : "border border-transparent"
-                }`}
+                className={`bg-white rounded-[30px] min-w-[280px] sm:min-w-[320px] md:min-w-[360px] h-[280px] snap-start transition-[transform,box-shadow] hover:shadow-lg ${benefit.highlighted ? "border-2 border-[#264eab]" : "border border-transparent"
+                  }`}
               >
                 <CardContent className="p-6 sm:p-8 h-full flex flex-col justify-between">
                   <div className="flex flex-col gap-6">
