@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { NavigationBarSection } from '@/src/screens/V/sections/NavigationBarSection/NavigationBarSection'
 import { ProductHeroSection } from './components/ProductHeroSection'
 import { MaterialsSection } from './components/MaterialsSection'
@@ -14,6 +15,7 @@ import { FooterSection } from './components/FooterSection'
 
 const products = [
   { id: 'flat-bottom-bags', label: 'FLAT BOTTOM BAGS' },
+  { id: 'standup-bags', label: 'STANDUP BAGS', link: '/standup-bags' },
   { id: 'carton-boxes', label: 'CARTON BOXES' },
 ]
 
@@ -27,30 +29,49 @@ export default function ProductsPage() {
       <div className="flex flex-col lg:flex-row gap-6 px-4 lg:px-[100px] py-6 lg:py-8">
         <aside className="w-full lg:w-[320px] flex-shrink-0">
           <div className="flex lg:flex-col gap-4">
-            {products.map((product) => (
-              <button
-                key={product.id}
-                onClick={() => setSelectedProduct(product.id)}
-                className={`flex items-center gap-3 px-6 py-4 rounded-[10px] transition-all w-full text-left ${
-                  selectedProduct === product.id
-                    ? 'bg-white shadow-[0px_5px_16px_-1px_rgba(0,0,0,0.15)]'
-                    : 'bg-white opacity-60 hover:opacity-80'
-                }`}
-              >
-                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 2L9.5 18L2 34M17 2L9.5 18L17 34"
-                    stroke={selectedProduct === product.id ? '#264EAB' : '#101014'}
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <span className={`font-semibold text-lg ${selectedProduct === product.id ? 'text-main' : 'text-text'}`}>
-                  {product.label}
-                </span>
-              </button>
-            ))}
+            {products.map((product) => {
+              const isSelected = selectedProduct === product.id
+              const buttonContent = (
+                <>
+                  <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2 2L9.5 18L2 34M17 2L9.5 18L17 34"
+                      stroke={isSelected ? '#264EAB' : '#101014'}
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <span className={`font-semibold text-lg ${isSelected ? 'text-main' : 'text-text'}`}>
+                    {product.label}
+                  </span>
+                </>
+              )
+
+              const className = `flex items-center gap-3 px-6 py-4 rounded-[10px] transition-all w-full text-left ${
+                isSelected
+                  ? 'bg-white shadow-[0px_5px_16px_-1px_rgba(0,0,0,0.15)]'
+                  : 'bg-white opacity-60 hover:opacity-80'
+              }`
+
+              if (product.link) {
+                return (
+                  <Link key={product.id} href={product.link} className={className}>
+                    {buttonContent}
+                  </Link>
+                )
+              }
+
+              return (
+                <button
+                  key={product.id}
+                  onClick={() => setSelectedProduct(product.id)}
+                  className={className}
+                >
+                  {buttonContent}
+                </button>
+              )
+            })}
           </div>
         </aside>
 
