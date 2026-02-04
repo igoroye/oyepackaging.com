@@ -47,7 +47,7 @@ export const NavigationBarSection = (): JSX.Element => {
             </span>
           </Button>
 
-          <Button className="h-auto px-6 py-4 bg-main rounded-[40px] border-2 border-[#264eab] hover:bg-[#1e3d8f] transition-colors">
+          <Button className="h-auto px-6 py-4 bg-[#2d3748] rounded-[40px] hover:bg-[#1a202c] transition-colors">
             <span className="text-white text-lg tracking-[0.54px] [font-family:'Inter',Helvetica] font-medium leading-[normal]">
               SIGN IN
             </span>
@@ -88,7 +88,7 @@ export const NavigationBarSection = (): JSX.Element => {
                 </span>
               </Button>
 
-              <Button className="h-auto px-6 py-3 bg-main rounded-[40px] border-2 border-[#264eab] hover:bg-[#1e3d8f] transition-colors w-full">
+              <Button className="h-auto px-6 py-3 bg-[#2d3748] rounded-[40px] hover:bg-[#1a202c] transition-colors w-full">
                 <span className="text-white text-base tracking-[0.54px] [font-family:'Inter',Helvetica] font-medium leading-[normal]">
                   SIGN IN
                 </span>

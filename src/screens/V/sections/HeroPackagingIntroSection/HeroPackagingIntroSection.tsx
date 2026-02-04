@@ -54,7 +54,7 @@ export const HeroPackagingIntroSection = (): JSX.Element => {
             <div className="relative w-fit">
               <div className="bg-[#3d5fa9] text-white rounded-[25px] px-6 py-3.5 shadow-lg">
                 <p className="[font-family:'Inter',Helvetica] font-medium text-sm sm:text-base leading-tight whitespace-nowrap">
-                  Create your dream coffee bag 🤩
+                  Create your dream coffee bag 😊
                 </p>
               </div>
               {/* Tail pointing down-left */}
