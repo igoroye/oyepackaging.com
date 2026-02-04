@@ -1,73 +1,116 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
-import { NavigationBarSection } from '@/src/screens/V/sections/NavigationBarSection/NavigationBarSection'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Our Products - Coffee Packaging Solutions',
-  description: 'Explore our range of premium coffee packaging products including standup bags, flat bottom bags, and carton boxes.',
-  openGraph: {
-    title: 'Our Products - Coffee Packaging Solutions | ÖYE Packaging',
-    description: 'Premium coffee packaging solutions for roasting companies.',
-    url: 'https://oyepackaging.com/products',
-  }
-}
+import { useState } from 'react'
+import { NavigationBarSection } from '@/src/screens/V/sections/NavigationBarSection/NavigationBarSection'
+import { ProductHeroSection } from './components/ProductHeroSection'
+import { MaterialsSection } from './components/MaterialsSection'
+import { BagSizesSection } from './components/BagSizesSection'
+import { PrintCustomizationSection } from './components/PrintCustomizationSection'
+import { TouchFeelSection } from './components/TouchFeelSection'
+import { FeaturesSection } from './components/FeaturesSection'
+import { BarrierSection } from './components/BarrierSection'
+import { CTASection } from './components/CTASection'
+import { FooterSection } from './components/FooterSection'
+
+const products = [
+  { id: 'flat-bottom-bags', label: 'FLAT BOTTOM BAGS' },
+  { id: 'carton-boxes', label: 'CARTON BOXES' },
+]
 
 export default function ProductsPage() {
-  const products = [
-    {
-      title: 'Standup Bags',
-      href: '/standup-bags',
-      description: 'Premium standup pouches for coffee packaging',
-      image: 'https://c.animaapp.com/mko0yo41F03JfF/img/image-6.png'
-    },
-    {
-      title: 'Flat Bottom Bags',
-      href: '/flat-bottom-bags',
-      description: 'Professional flat bottom bags with excellent shelf presence',
-      image: 'https://c.animaapp.com/mko0yo41F03JfF/img/image-7.png'
-    },
-    {
-      title: 'Carton Boxes',
-      href: '/carton-boxes',
-      description: 'Durable carton boxes for bulk packaging',
-      image: 'https://c.animaapp.com/mko0yo41F03JfF/img/image-8.png'
-    }
-  ]
+  const [selectedProduct, setSelectedProduct] = useState('flat-bottom-bags')
 
   return (
     <div className="min-h-screen bg-white">
       <NavigationBarSection />
 
-      <main className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] py-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-text mb-4">Our Products</h1>
-        <p className="text-lg text-gray-600 mb-12 max-w-3xl">
-          Discover our comprehensive range of coffee packaging solutions designed for roasting companies across Europe.
-        </p>
+      <div className="flex flex-col lg:flex-row gap-6 px-4 lg:px-[100px] py-6 lg:py-8">
+        <aside className="w-full lg:w-[320px] flex-shrink-0">
+          <div className="flex lg:flex-col gap-4">
+            {products.map((product) => (
+              <button
+                key={product.id}
+                onClick={() => setSelectedProduct(product.id)}
+                className={`flex items-center gap-3 px-6 py-4 rounded-[10px] transition-all w-full text-left ${
+                  selectedProduct === product.id
+                    ? 'bg-white shadow-[0px_5px_16px_-1px_rgba(0,0,0,0.15)]'
+                    : 'bg-white opacity-60 hover:opacity-80'
+                }`}
+              >
+                <svg width="19" height="36" viewBox="0 0 19 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 2L9.5 18L2 34M17 2L9.5 18L17 34"
+                    stroke={selectedProduct === product.id ? '#264EAB' : '#101014'}
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <span className={`font-semibold text-lg ${selectedProduct === product.id ? 'text-main' : 'text-text'}`}>
+                  {product.label}
+                </span>
+              </button>
+            ))}
+          </div>
+        </aside>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <Link
-              key={product.href}
-              href={product.href}
-              className="group block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+        <main className="flex-1 min-w-0">
+          <ProductHeroSection />
+
+          <div className="mt-8 lg:mt-12">
+            <div className="border border-[#101014]/30 rounded-[20px] p-6 lg:p-8 mb-8">
+              <div className="flex flex-col md:flex-row items-center justify-around gap-8">
+                <div className="flex items-center gap-4">
+                  <svg width="28" height="54" viewBox="0 0 28 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L14 27L2 52M26 2L14 27L26 52" stroke="#101014" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <div className="text-center md:text-left">
+                    <p className="text-lg font-medium text-text">MOQ (MINIMUM ORDER QUANTITY)</p>
+                    <p className="text-3xl font-medium text-text">1500 PCS</p>
+                  </div>
+                </div>
+                <div className="hidden md:block w-px h-16 bg-[#101014]" />
+                <div className="flex items-center gap-4">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="10" width="40" height="32" rx="2" stroke="#101014" strokeWidth="2"/>
+                    <path d="M10 2V10M34 2V10" stroke="#101014" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M2 18H42" stroke="#101014" strokeWidth="2"/>
+                  </svg>
+                  <div className="text-center md:text-left">
+                    <p className="text-lg font-medium text-text">PRODUCTION TIME FROM</p>
+                    <p className="text-3xl font-medium text-text">4 WEEKS</p>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-text mb-2 group-hover:text-main transition-colors">
-                  {product.title}
-                </h3>
-                <p className="text-gray-600">{product.description}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </main>
+            </div>
+          </div>
+
+          <section className="mt-8">
+            <h2 className="text-3xl font-semibold text-text mb-6">CUSTOMIZATION OPTIONS</h2>
+
+            <div className="border border-[#101014]/30 rounded-[20px] p-6 lg:p-8 space-y-8">
+              <MaterialsSection />
+              <BagSizesSection />
+              <PrintCustomizationSection />
+              <TouchFeelSection />
+            </div>
+          </section>
+
+          <section className="mt-8 lg:mt-12">
+            <div className="border border-[#101014]/30 rounded-[20px] p-6 lg:p-8">
+              <FeaturesSection />
+            </div>
+          </section>
+
+          <section className="mt-8 lg:mt-12">
+            <BarrierSection />
+          </section>
+
+          <CTASection />
+        </main>
+      </div>
+
+      <FooterSection />
     </div>
   )
 }
