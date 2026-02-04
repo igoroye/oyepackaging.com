@@ -1,6 +1,8 @@
+'use client'
+
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "../../../../components/ui/button";
 
 const navigationLinks = [
@@ -15,7 +17,7 @@ export const NavigationBarSection = (): JSX.Element => {
     <header className="w-full bg-transparent py-4 md:py-6 translate-y-[-1rem] animate-fade-in opacity-0 relative z-50">
       <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
         {/* Logo */}
-        <Link to="/">
+        <Link href="/">
           <img
             className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
             alt="ÖYE Logo"
@@ -28,7 +30,7 @@ export const NavigationBarSection = (): JSX.Element => {
           {navigationLinks.map((link, index) => (
             <Link
               key={index}
-              to={link.href}
+              href={link.href}
               className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors"
             >
               {link.label}
@@ -71,7 +73,7 @@ export const NavigationBarSection = (): JSX.Element => {
             {navigationLinks.map((link, index) => (
               <Link
                 key={index}
-                to={link.href}
+                href={link.href}
                 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
