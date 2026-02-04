@@ -1,7 +1,4 @@
 {
-  "/products/page": "app/products/page.js",
-  "/page": "app/page.js",
-  "/services/page": "app/services/page.js",
-  "/drip-bags/page": "app/drip-bags/page.js",
-  "/brew-bags/page": "app/brew-bags/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js"
 }
