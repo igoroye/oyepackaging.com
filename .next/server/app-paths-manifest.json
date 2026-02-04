@@ -3,5 +3,6 @@
   "/contact-us/page": "app/contact-us/page.js",
   "/privacy-policy/page": "app/privacy-policy/page.js",
   "/cookies/page": "app/cookies/page.js",
-  "/terms-conditions/page": "app/terms-conditions/page.js"
+  "/terms-conditions/page": "app/terms-conditions/page.js",
+  "/sustainability/page": "app/sustainability/page.js"
 }
