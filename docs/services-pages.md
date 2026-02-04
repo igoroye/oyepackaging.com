@@ -67,8 +67,8 @@ Both pages use external CDN URLs from `c.animaapp.com`. This is a working soluti
 ### Optional Migration
 
 Edge Functions have been created for migrating images to Supabase Storage:
-- `migrate-brew-images` - For Brew Bags page
-- `migrate-cold-brew-images` - For Cold Brew Bags page
+- `upload-brew-images` - For Brew Bags page (deployed and ready)
+- `migrate-cold-brew-images` - For Cold Brew Bags page (deployed and ready)
 
 **Documentation:**
 - [Brew Bags Images](./brew-bags-images.md)
