@@ -136,10 +136,10 @@ export const PackagingOverviewSection = (): JSX.Element => {
                         backgroundClip: "text",
                       }}
                     >
-                      {card.text.split("\n").map((line, i) => (
+                      {card.text?.split("\n").map((line, i) => (
                         <span key={i}>
                           {line}
-                          {i < card.text.split("\n").length - 1 && <br />}
+                          {i < (card.text?.split("\n").length ?? 0) - 1 && <br />}
                         </span>
                       ))}
                     </div>
