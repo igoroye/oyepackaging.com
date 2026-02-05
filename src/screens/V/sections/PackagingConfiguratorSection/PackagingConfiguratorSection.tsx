@@ -108,7 +108,7 @@ export const PackagingConfiguratorSection = (): JSX.Element => {
               <img
                 className="absolute inset-0 w-full h-full object-contain transform rotate-[15deg] origin-center"
                 alt="Product packaging"
-                src="https://c.animaapp.com/mko0yo41F03JfF/img/----------1-9.png"
+                src="/images/home-page/slider-1.png"
               />
             </div>
           </div>
