@@ -3983,6 +3983,10 @@ video {
     width: auto;
   }
 
+  .lg\:w-\[550px\] {
+    width: 550px;
+  }
+
   .lg\:max-w-\[402px\] {
     max-width: 402px;
   }

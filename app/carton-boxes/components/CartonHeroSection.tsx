@@ -55,8 +55,8 @@ function FeatureIcon({ type }: { type: string }) {
 export function CartonHeroSection() {
   return (
     <div className="flex flex-col lg:flex-row gap-8 items-start">
-      <div className="w-full lg:w-[400px] h-[300px] lg:h-[380px] bg-bg-beige rounded-[20px] relative overflow-hidden flex-shrink-0">
-        <div className="absolute top-3 left-1/2 -translate-x-1/2 flex items-center gap-2">
+      <div className="w-full lg:w-[550px] h-[300px] lg:h-[450px] bg-bg-beige rounded-[20px] relative overflow-hidden flex-shrink-0">
+        <div className="hidden absolute top-3 left-1/2 -translate-x-1/2 flex items-center gap-2">
           <div className="flex items-center gap-1.5 px-3 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/50">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.5 1V14M1 7.5H14" stroke="#101014" strokeWidth="1.5" strokeLinecap="round"/>

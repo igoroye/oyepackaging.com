@@ -271,7 +271,7 @@ export function StandupBagsContent() {
                                     src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/matte-coffee-bag-mockup-02-2.png"
                                 />
 
-                                <div className="absolute top-[10px] left-1/2 -translate-x-1/2 flex items-center gap-2">
+                                <div className="hidden absolute top-[10px] left-1/2 -translate-x-1/2 flex items-center gap-2">
                                     <Badge className="h-[27px] px-3 py-2 bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm flex items-center gap-[3px]">
                                         <img
                                             className="w-[15px] h-[15px]"
