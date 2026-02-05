@@ -41,7 +41,7 @@ const cardsData = [
   },
   {
     type: "image",
-    src: "/images/about-us/countries.png",
+    src: "/images/about-us/30.png",
     alt: "Countries we serve",
   },
   {
