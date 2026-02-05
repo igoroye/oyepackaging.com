@@ -2,49 +2,11 @@
 
 import React, { useState } from 'react'
 
-interface AccordionItem {
+export interface AccordionItem {
   id: number
   title: string
   imageUrl: string
 }
-
-const accordionItems: AccordionItem[] = [
-  {
-    id: 1,
-    title: 'Events & Conferences',
-    imageUrl: '/images/drip-bags/events_and_conferences.webp',
-  },
-  {
-    id: 2,
-    title: 'Gas Stations',
-    imageUrl: '/images/drip-bags/gas_stations.webp',
-  },
-  {
-    id: 3,
-    title: 'Gift Shops',
-    imageUrl: '/images/drip-bags/gift_shops.webp',
-  },
-  {
-    id: 4,
-    title: 'Hotels',
-    imageUrl: '/images/drip-bags/hotels.webp',
-  },
-  {
-    id: 5,
-    title: 'Offices',
-    imageUrl: '/images/drip-bags/offices.webp',
-  },
-  {
-    id: 6,
-    title: 'Online Stores',
-    imageUrl: '/images/drip-bags/online_stores.webp',
-  },
-  {
-    id: 7,
-    title: 'Tourist Shops',
-    imageUrl: '/images/drip-bags/turists_shops.webp',
-  },
-]
 
 interface AccordionItemProps {
   item: AccordionItem
@@ -91,8 +53,16 @@ const AccordionItemComponent = ({ item, isActive, onMouseEnter }: AccordionItemP
   )
 }
 
-export function InteractiveImageAccordion() {
-  const [activeIndex, setActiveIndex] = useState(3)
+interface InteractiveImageAccordionProps {
+  items: AccordionItem[]
+  defaultActiveIndex?: number
+}
+
+export function InteractiveImageAccordion({
+  items,
+  defaultActiveIndex = 3
+}: InteractiveImageAccordionProps) {
+  const [activeIndex, setActiveIndex] = useState(defaultActiveIndex)
 
   const handleItemHover = (index: number) => {
     setActiveIndex(index)
@@ -101,7 +71,7 @@ export function InteractiveImageAccordion() {
   return (
     <div className="w-full">
       <div className="flex flex-row items-center justify-center gap-4 overflow-x-auto p-4">
-        {accordionItems.map((item, index) => (
+        {items.map((item, index) => (
           <AccordionItemComponent
             key={item.id}
             item={item}

@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import { InteractiveImageAccordion, type AccordionItem } from "@/components/ui/interactive-image-accordion"
 
 const features = [
   {
@@ -82,6 +83,44 @@ const offerLocations = [
   {
     icon: "https://c.animaapp.com/mkvdixiwyRK4ZE/img/calendar-star-1.svg",
     title: "EVENTS AND CONFERENCES",
+  },
+]
+
+const brewBagsLocations: AccordionItem[] = [
+  {
+    id: 1,
+    title: 'Events & Conferences',
+    imageUrl: '/images/brew-bags/events_and_conferences.webp',
+  },
+  {
+    id: 2,
+    title: 'Gas Stations',
+    imageUrl: '/images/brew-bags/gas_stations.webp',
+  },
+  {
+    id: 3,
+    title: 'Gift Shops',
+    imageUrl: '/images/brew-bags/gift_shops.webp',
+  },
+  {
+    id: 4,
+    title: 'Hotels',
+    imageUrl: '/images/brew-bags/hotels.webp',
+  },
+  {
+    id: 5,
+    title: 'Offices',
+    imageUrl: '/images/brew-bags/offices.webp',
+  },
+  {
+    id: 6,
+    title: 'Online Stores',
+    imageUrl: '/images/brew-bags/online_stores.webp',
+  },
+  {
+    id: 7,
+    title: 'Tourist Shops',
+    imageUrl: '/images/brew-bags/turist_shops.webp',
   },
 ]
 
@@ -507,76 +546,12 @@ export function BrewBagsContent() {
           </Card>
         </section>
 
-        <section className="max-w-[925px] mx-auto mb-16">
+        <section className="max-w-[1400px] mx-auto mb-16">
           <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-3xl tracking-[-0.60px] leading-[49px] mb-8 text-center">
             WHERE TO OFFER BREW BAGS?
           </h2>
 
-          <div className="flex flex-col md:flex-row gap-4">
-            <Card className="flex-1 rounded-[20px] border border-[#101014] opacity-30">
-              <CardContent className="p-6">
-                <img
-                  className="w-full h-[271px] object-cover rounded-[20px] mb-4"
-                  alt="Offices"
-                  src="https://c.animaapp.com/mkvdixiwyRK4ZE/img/mask-group-4.png"
-                />
-                <div className="flex items-center gap-2 mb-4">
-                  <img
-                    className="w-6 h-6"
-                    alt="Office icon"
-                    src="https://c.animaapp.com/mkvdixiwyRK4ZE/img/chair-office-1.svg"
-                  />
-                  <span className="[font-family:'Inter',Helvetica] font-medium text-text text-lg">
-                    OFFICES
-                  </span>
-                </div>
-                <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm leading-[22px]">
-                  A simple solution for quality coffee at work, saving time and
-                  enhancing productivity.
-                </p>
-              </CardContent>
-            </Card>
-
-            <div className="hidden md:flex gap-2">
-              {offerLocations.slice(1).map((location, index) => (
-                <Card
-                  key={index}
-                  className="w-[71px] h-[389px] rounded-[20px] shadow-[0px_3px_18px_#0000001c]"
-                >
-                  <CardContent className="h-full flex flex-col items-center justify-center p-4 gap-4">
-                    <span className="[font-family:'Inter',Helvetica] font-medium text-text text-lg text-center -rotate-90 whitespace-nowrap">
-                      {location.title}
-                    </span>
-                    <img
-                      className="w-6 h-6"
-                      alt={location.title}
-                      src={location.icon}
-                    />
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-2 md:hidden gap-4 mt-4">
-              {offerLocations.slice(1).map((location, index) => (
-                <Card
-                  key={index}
-                  className="rounded-[20px] shadow-[0px_3px_18px_#0000001c]"
-                >
-                  <CardContent className="p-4 flex flex-col items-center justify-center gap-2">
-                    <img
-                      className="w-6 h-6"
-                      alt={location.title}
-                      src={location.icon}
-                    />
-                    <span className="[font-family:'Inter',Helvetica] font-medium text-text text-sm text-center">
-                      {location.title}
-                    </span>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
+          <InteractiveImageAccordion items={brewBagsLocations} defaultActiveIndex={4} />
         </section>
 
         <section className="max-w-[925px] mx-auto mb-16">
