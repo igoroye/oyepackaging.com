@@ -1677,6 +1677,9 @@ video {
 .max-w-full {
   max-width: 100%;
 }
+.max-w-\[450px\] {
+  max-width: 450px;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2185,6 +2188,10 @@ video {
 }
 .bg-white {
   background-color: var(--white);
+}
+.bg-\[\#F5F5EF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 239 / var(--tw-bg-opacity, 1));
 }
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
@@ -3890,6 +3897,10 @@ video {
 
   .lg\:p-\[60px\] {
     padding: 60px;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
   }
 
   .lg\:px-12 {

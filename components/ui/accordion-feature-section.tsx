@@ -63,8 +63,8 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
   const [activeImage, setActiveImage] = useState(features[0].image);
 
   return (
-    <section className="py-8 md:py-16">
-      <div className="w-full">
+    <section className="py-8 md:py-16 flex justify-center">
+      <div className="w-full max-w-[1240px] bg-[#F5F5EF] rounded-[20px] p-6 md:p-10 lg:p-12">
         <div className="flex w-full flex-col lg:flex-row items-start gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2">
             <Accordion type="single" className="w-full" defaultValue="item-1">
@@ -99,11 +99,11 @@ const Feature197 = ({ features = defaultFeatures }: Feature197Props) => {
               ))}
             </Accordion>
           </div>
-          <div className="relative hidden lg:block w-full lg:w-1/2 overflow-hidden rounded-[20px]">
+          <div className="relative hidden lg:flex w-full lg:w-1/2 items-center justify-center">
             <img
               src={activeImage}
               alt="Feature preview"
-              className="w-full h-auto rounded-[20px] object-cover"
+              className="w-full max-w-[450px] h-auto rounded-[20px] object-cover"
             />
           </div>
         </div>
