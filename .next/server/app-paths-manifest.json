@@ -1,4 +1,8 @@
 {
   "/page": "app/page.js",
-  "/about-us/page": "app/about-us/page.js"
+  "/about-us/page": "app/about-us/page.js",
+  "/flat-bottom-bags/page": "app/flat-bottom-bags/page.js",
+  "/products/page": "app/products/page.js",
+  "/drip-bags/page": "app/drip-bags/page.js",
+  "/sustainability/page": "app/sustainability/page.js"
 }
