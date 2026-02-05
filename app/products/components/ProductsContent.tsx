@@ -596,7 +596,7 @@ export function ProductsContent() {
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
-                <Card className="bg-bg-gray rounded-[10px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[10px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
                       <img
@@ -616,7 +616,7 @@ export function ProductsContent() {
                   </p>
                 </Card>
 
-                <Card className="bg-bg-gray rounded-[10px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[10px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
                       <img
@@ -636,7 +636,7 @@ export function ProductsContent() {
                   </p>
                 </Card>
 
-                <Card className="bg-bg-gray rounded-[20px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[20px] border-0">
                   <CardContent className="p-6 relative h-[263px] flex items-center justify-center">
                     <img
                       className="w-full h-full object-contain"
@@ -648,7 +648,7 @@ export function ProductsContent() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
-                <Card className="bg-bg-gray rounded-[10px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[10px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
                       <img
@@ -663,7 +663,7 @@ export function ProductsContent() {
                   </p>
                 </Card>
 
-                <Card className="bg-bg-gray rounded-[10px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[10px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px]" />
                     <img
@@ -677,7 +677,7 @@ export function ProductsContent() {
                   </p>
                 </Card>
 
-                <Card className="bg-bg-gray rounded-[20px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[20px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
                       <img
@@ -694,7 +694,7 @@ export function ProductsContent() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                <Card className="bg-bg-gray rounded-[20px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[20px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px]" />
                     <img
@@ -708,7 +708,7 @@ export function ProductsContent() {
                   </p>
                 </Card>
 
-                <Card className="bg-bg-gray rounded-[20px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[20px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
                       <img
@@ -723,7 +723,7 @@ export function ProductsContent() {
                   </p>
                 </Card>
 
-                <Card className="bg-bg-gray rounded-[20px] opacity-50 border-0">
+                <Card className="bg-bg-gray rounded-[20px] border-0">
                   <CardContent className="p-6 relative h-[263px]">
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px]" />
                     <img
