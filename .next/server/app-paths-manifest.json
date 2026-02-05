@@ -2,6 +2,8 @@
   "/page": "app/page.js",
   "/drip-bags/page": "app/drip-bags/page.js",
   "/brew-bags/page": "app/brew-bags/page.js",
+  "/products/page": "app/products/page.js",
   "/flat-bottom-bags/page": "app/flat-bottom-bags/page.js",
-  "/products/page": "app/products/page.js"
+  "/standup-bags/page": "app/standup-bags/page.js",
+  "/carton-boxes/page": "app/carton-boxes/page.js"
 }
