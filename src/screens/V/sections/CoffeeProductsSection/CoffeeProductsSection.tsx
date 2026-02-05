@@ -26,23 +26,18 @@ export const CoffeeProductsSection = (): JSX.Element => {
           </div>
 
           {/* Coffee Services Card */}
-          <div className="relative bg-[#f5f5ef] rounded-[10px] overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[400px] p-6 sm:p-8 md:p-10 flex flex-col">
-            {/* Title */}
-            <h3 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-4xl tracking-[0] leading-tight text-center mb-4 md:mb-6">
-              COFFEE SERVICES
-            </h3>
-            
+          <div className="relative bg-[#f5f5ef] rounded-[10px] overflow-hidden min-h-[280px] sm:min-h-[320px] md:min-h-[400px] p-6 sm:p-8 md:p-10 flex flex-col items-center justify-start">
             {/* Button */}
-            <button className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border-2 border-main text-main [font-family:'Inter',Helvetica] font-medium text-sm sm:text-base tracking-[0.48px] hover:bg-main hover:text-white transition-colors self-center">
+            <button className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border-2 border-main text-main [font-family:'Inter',Helvetica] font-medium text-sm sm:text-base tracking-[0.48px] hover:bg-main hover:text-white transition-colors z-10">
               LEARN MORE
             </button>
-            
+
             {/* Decorative Image */}
-            <div className="absolute bottom-0 left-0 right-0 w-full h-[55%] flex items-end justify-center pointer-events-none">
+            <div className="absolute bottom-0 left-0 right-0 w-full h-[65%] flex items-end justify-center pointer-events-none">
               <img
-                className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] h-auto object-contain"
+                className="w-full h-full object-cover object-bottom"
                 alt=""
-                src="https://c.animaapp.com/mko0yo41F03JfF/img/coffee-services.png"
+                src="/images/home-page/services-section.png"
               />
             </div>
           </div>
