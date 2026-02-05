@@ -1,13 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/about-us/page": "app/about-us/page.js",
   "/drip-bags/page": "app/drip-bags/page.js",
-  "/carton-boxes/page": "app/carton-boxes/page.js",
-  "/brew-bags/page": "app/brew-bags/page.js",
   "/contact-us/page": "app/contact-us/page.js",
   "/privacy-policy/page": "app/privacy-policy/page.js",
-  "/cookies/page": "app/cookies/page.js",
-  "/terms-conditions/page": "app/terms-conditions/page.js",
   "/flat-bottom-bags/page": "app/flat-bottom-bags/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/sustainability/page": "app/sustainability/page.js"
 }
