@@ -44,9 +44,9 @@ const touchOptions = [
 
 const featuresList = [
     {
-        name: "TOP OPENING ZIPPER",
-        image: "https://c.animaapp.com/mkve5d5vXaRKB0/img/vector-127.svg",
-        detail: "https://c.animaapp.com/mko1bcw3ZdsnAC/img/top-opening-zipper.png",
+        name: "",
+        image: "",
+        detail: "/images/standup-bags/top-zipper.png",
     },
     {
         name: "TEAR NOTCH",
@@ -572,13 +572,15 @@ export function StandupBagsContent() {
                                 {featuresList.map((feature, index) => (
                                     <Card key={index} className="bg-bg-gray rounded-[20px] bg-opacity-[0.5] border-0">
                                         <CardContent className="p-6 relative h-[263px]">
-                                            <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
-                                                <img
-                                                    className="w-[95px] h-[95px]"
-                                                    alt={feature.name}
-                                                    src={feature.image}
-                                                />
-                                            </div>
+                                            {feature.image && (
+                                                <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
+                                                    <img
+                                                        className="w-[95px] h-[95px]"
+                                                        alt={feature.name}
+                                                        src={feature.image}
+                                                    />
+                                                </div>
+                                            )}
                                             <img
                                                 className="absolute bottom-8 left-1/2 -translate-x-1/2"
                                                 alt={feature.name + " detail"}
@@ -586,9 +588,11 @@ export function StandupBagsContent() {
                                                 style={{ maxWidth: "150px", maxHeight: "100px" }}
                                             />
                                         </CardContent>
-                                        <p className="[font-family:'Inter',Helvetica] font-medium text-text text-sm text-center pb-4">
-                                            {feature.name}
-                                        </p>
+                                        {feature.name && (
+                                            <p className="[font-family:'Inter',Helvetica] font-medium text-text text-sm text-center pb-4">
+                                                {feature.name}
+                                            </p>
+                                        )}
                                     </Card>
                                 ))}
                             </div>
