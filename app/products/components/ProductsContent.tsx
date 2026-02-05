@@ -118,7 +118,8 @@ export function ProductsContent() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+          <div className="max-w-[1240px] mx-auto flex items-center justify-between">
           <Link href="/">
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
@@ -166,6 +167,7 @@ export function ProductsContent() {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          </div>
         </nav>
 
         {mobileMenuOpen && (
@@ -910,6 +912,7 @@ export function ProductsContent() {
 
       <footer className="bg-white border-t border-gray-200">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] py-8">
+          <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-8">
             <div className="max-w-full lg:max-w-md">
               <img
@@ -1006,6 +1009,7 @@ export function ProductsContent() {
                 ))}
               </div>
             </div>
+          </div>
           </div>
         </div>
       </footer>

@@ -122,7 +122,8 @@ export function StandupBagsContent() {
     return (
         <div className="min-h-screen bg-white overflow-x-hidden">
             <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-                <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+                <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+                    <div className="max-w-[1240px] mx-auto flex items-center justify-between">
                     <Link href="/">
                         <img
                             className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
@@ -170,6 +171,7 @@ export function StandupBagsContent() {
                     >
                         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
+                    </div>
                 </nav>
 
                 {mobileMenuOpen && (
@@ -689,6 +691,7 @@ export function StandupBagsContent() {
 
             <footer className="bg-white border-t border-[#101014]/10 mt-16">
                 <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] py-8">
+                    <div className="max-w-[1240px] mx-auto">
                     <div className="mb-8">
                         <img
                             className="w-[147px] h-14 mb-6"
@@ -732,6 +735,7 @@ export function StandupBagsContent() {
                             <a href="#" className="[font-family:'Inter',Helvetica] font-normal text-text text-xs uppercase hover:underline">SITEMAP</a>
                             <a href="#" className="[font-family:'Inter',Helvetica] font-normal text-text text-xs uppercase hover:underline">TERMS & CONDITIONS</a>
                         </div>
+                    </div>
                     </div>
                 </div>
             </footer>

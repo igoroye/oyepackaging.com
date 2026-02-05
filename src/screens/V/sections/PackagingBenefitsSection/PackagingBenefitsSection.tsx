@@ -88,7 +88,7 @@ export const PackagingBenefitsSection = (): JSX.Element => {
 
   return (
     <section className="relative w-full py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-12">
-      <div className="max-w-[1662px] mx-auto">
+      <div className="max-w-[1240px] mx-auto">
         <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-[44px] tracking-[-0.88px] leading-tight md:leading-[49px] mb-8 md:mb-16 translate-y-[-1rem] animate-fade-in opacity-0">
           WHY ÖYE IS YOUR <br />
           PACKAGING PARTNER

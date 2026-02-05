@@ -179,7 +179,8 @@ export function TermsAndConditionsContent() {
   return (
     <div className="relative w-full min-h-screen bg-white overflow-hidden">
       <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+          <div className="max-w-[1240px] mx-auto flex items-center justify-between">
           <Link href="/">
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
@@ -188,7 +189,7 @@ export function TermsAndConditionsContent() {
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-12">
+          <div className="hidden lg:flex items-center justify-between gap-12">
             {navigationLinks.map((link, index) => (
               <Link
                 key={index}
@@ -224,6 +225,7 @@ export function TermsAndConditionsContent() {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          </div>
         </nav>
 
         {mobileMenuOpen && (
@@ -261,6 +263,7 @@ export function TermsAndConditionsContent() {
       </header>
 
       <main className="w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
+        <div className="max-w-[1240px] mx-auto">
         <div className="max-w-[1030px] mx-auto">
           <h1 className="[font-family:'Inter',Helvetica] font-semibold text-text text-3xl md:text-[44px] text-center tracking-[0] leading-tight md:leading-[49px] mb-4">
             TERMS & CONDITIONS
@@ -359,6 +362,7 @@ export function TermsAndConditionsContent() {
                 </p>
               </div>
             </section>
+          </div>
           </div>
         </div>
       </main>

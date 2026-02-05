@@ -66,7 +66,8 @@ export function PrivacyPolicyContent() {
   return (
     <div className="relative w-full min-h-screen bg-white overflow-hidden flex flex-col">
       <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+          <div className="max-w-[1240px] mx-auto flex items-center justify-between">
           <Link href="/">
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
@@ -111,6 +112,7 @@ export function PrivacyPolicyContent() {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          </div>
         </nav>
 
         {mobileMenuOpen && (
@@ -149,6 +151,7 @@ export function PrivacyPolicyContent() {
 
       <main className="flex-1 w-full">
         <div className="w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
+          <div className="max-w-[1240px] mx-auto">
           <h1 className="[font-family:'Inter',Helvetica] font-semibold text-text text-[44px] text-center leading-[49px] tracking-[0] mb-4">
             PRIVACY POLICY
           </h1>
@@ -599,10 +602,12 @@ export function PrivacyPolicyContent() {
               <Separator className="w-full" />
             </section>
           </div>
+          </div>
         </div>
       </main>
 
       <footer className="w-full bg-white px-4 sm:px-6 md:px-12 lg:px-[100px] py-8">
+        <div className="max-w-[1240px] mx-auto">
         <div className="max-w-[1240px] mx-auto">
           <div className="mb-8">
             <img
@@ -734,6 +739,7 @@ export function PrivacyPolicyContent() {
                 ))}
               </div>
             </div>
+          </div>
           </div>
         </div>
       </footer>

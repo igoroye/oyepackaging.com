@@ -48,7 +48,7 @@ export const PackagingConfiguratorSection = (): JSX.Element => {
         ÖYE INNOVATIONS
       </h2>
 
-      <div className="relative w-full max-w-[1662px] mx-auto">
+      <div className="relative w-full max-w-[1240px] mx-auto">
         <div className="bg-bg-beige rounded-[20px] p-6 sm:p-8 md:p-10 lg:p-[60px] grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <div className="flex flex-col items-start">
             <Accordion

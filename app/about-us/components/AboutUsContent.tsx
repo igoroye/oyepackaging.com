@@ -114,12 +114,14 @@ export function AboutUsContent() {
       </div>
 
       <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
-        <h2 className="[font-family:'Inter',Helvetica] font-medium text-text text-2xl sm:text-3xl md:text-[44px] text-center tracking-[0] leading-tight md:leading-[49px] mb-4">
-          WE KNOW EVERYTHING
-        </h2>
-        <h1 className="[font-family:'Inter',Helvetica] font-semibold text-text text-4xl sm:text-5xl md:text-[80px] text-center tracking-[0] leading-tight md:leading-[99px]">
-          ABOUT PACKAGING
-        </h1>
+        <div className="max-w-[1240px] mx-auto">
+          <h2 className="[font-family:'Inter',Helvetica] font-medium text-text text-2xl sm:text-3xl md:text-[44px] text-center tracking-[0] leading-tight md:leading-[49px] mb-4">
+            WE KNOW EVERYTHING
+          </h2>
+          <h1 className="[font-family:'Inter',Helvetica] font-semibold text-text text-4xl sm:text-5xl md:text-[80px] text-center tracking-[0] leading-tight md:leading-[99px]">
+            ABOUT PACKAGING
+          </h1>
+        </div>
       </section>
 
       <div className="relative w-full">
@@ -127,26 +129,32 @@ export function AboutUsContent() {
       </div>
 
       <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
-        <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-[44px] text-center tracking-[0] leading-tight md:leading-[49px]">
-          SMART. SUSTAINABLE. SUPERIOR.
-        </h2>
+        <div className="max-w-[1240px] mx-auto">
+          <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-[44px] text-center tracking-[0] leading-tight md:leading-[49px]">
+            SMART. SUSTAINABLE. SUPERIOR.
+          </h2>
+        </div>
       </section>
 
-      <div className="relative w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
-        <div className="relative w-full">
-          <ClientStatsSection />
-        </div>
-        <div className="relative w-full">
-          <ProductionHighlightsSection />
+      <div className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
+        <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="relative w-full">
+            <ClientStatsSection />
+          </div>
+          <div className="relative w-full">
+            <ProductionHighlightsSection />
+          </div>
         </div>
       </div>
 
-      <div className="relative w-full grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
-        <div className="relative w-full">
-          <ProactiveTeamSection />
-        </div>
-        <div className="relative w-full">
-          <SustainabilitySection />
+      <div className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
+        <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="relative w-full">
+            <ProactiveTeamSection />
+          </div>
+          <div className="relative w-full">
+            <SustainabilitySection />
+          </div>
         </div>
       </div>
 
@@ -155,15 +163,18 @@ export function AboutUsContent() {
       </section>
 
       <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
-        <img
-          className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-[20px]"
-          alt="Any questions left"
-          src="https://c.animaapp.com/mkvbxc2okqfhzF/img/any-questions--left-.png"
-        />
+        <div className="max-w-[1240px] mx-auto">
+          <img
+            className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-[20px]"
+            alt="Any questions left"
+            src="https://c.animaapp.com/mkvbxc2okqfhzF/img/any-questions--left-.png"
+          />
+        </div>
       </section>
 
       <footer className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10 bg-[#ffffff]">
-        <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0 mb-8 md:mb-10">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0 mb-8 md:mb-10">
           <div className="flex flex-col max-w-full lg:max-w-[402px]">
             <img
               className="w-[120px] sm:w-[147px] h-auto mb-4 md:mb-6"
@@ -311,6 +322,7 @@ export function AboutUsContent() {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </footer>
     </div>

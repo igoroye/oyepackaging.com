@@ -15,7 +15,7 @@ export const HeroSection = (): JSX.Element => {
 
   return (
     <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-      <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+      <nav className="container mx-auto max-w-[1240px] px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <img
@@ -69,7 +69,7 @@ export const HeroSection = (): JSX.Element => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 animate-fade-in">
-          <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col gap-4">
+          <div className="container mx-auto max-w-[1240px] px-4 sm:px-6 py-6 flex flex-col gap-4">
             {navigationLinks.map((link, index) => (
               <Link
                 key={index}

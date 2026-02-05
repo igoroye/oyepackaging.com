@@ -214,6 +214,7 @@ export function BrewBagsContent() {
     <div className="relative min-h-screen bg-white">
       <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
         <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+          <div className="max-w-[1240px] mx-auto w-full flex items-center justify-between">
           <Link href="/">
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
@@ -261,6 +262,7 @@ export function BrewBagsContent() {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          </div>
         </nav>
 
         {mobileMenuOpen && (

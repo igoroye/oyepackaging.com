@@ -89,7 +89,8 @@ export function ContactUsContent() {
   return (
     <div className="relative w-full min-h-screen bg-white overflow-hidden">
       <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
+        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+          <div className="max-w-[1240px] mx-auto flex items-center justify-between">
           <Link href="/">
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
@@ -137,6 +138,7 @@ export function ContactUsContent() {
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+          </div>
         </nav>
 
         {mobileMenuOpen && (
@@ -179,6 +181,7 @@ export function ContactUsContent() {
 
       <main className="relative w-full">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] py-10">
+          <div className="max-w-[1240px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative">
               <div className="w-full max-w-[600px]">
@@ -356,11 +359,13 @@ export function ContactUsContent() {
               />
             </div>
           </div>
+          </div>
         </div>
       </main>
 
       <footer className="relative w-full bg-white pt-16 pb-8">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+          <div className="max-w-[1240px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
             <div>
               <img
@@ -480,6 +485,7 @@ export function ContactUsContent() {
                 </a>
               ))}
             </div>
+          </div>
           </div>
         </div>
       </footer>

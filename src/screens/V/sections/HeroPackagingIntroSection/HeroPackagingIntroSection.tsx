@@ -1,6 +1,7 @@
 export const HeroPackagingIntroSection = (): JSX.Element => {
   return (
-    <section className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-12 gap-8 lg:gap-16">
+    <section className="w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-12">
+      <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-16">
       {/* Left Content */}
       <div className="flex flex-col items-start max-w-full lg:max-w-[580px]">
         <h2 className="[font-family:'Inter',Helvetica] font-medium text-text text-2xl sm:text-3xl md:text-[44px] tracking-[0] leading-tight md:leading-[49px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
@@ -25,6 +26,7 @@ export const HeroPackagingIntroSection = (): JSX.Element => {
           alt="Packaging illustration"
           src="/images/home-page/bubbles.png"
         />
+      </div>
       </div>
     </section>
   );
