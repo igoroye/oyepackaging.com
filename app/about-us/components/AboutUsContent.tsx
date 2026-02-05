@@ -7,6 +7,7 @@ import { PackagingOverviewSection } from "@/src/routes/AboutUs/screens/sections/
 import { ProductionHighlightsSection } from "@/src/routes/AboutUs/screens/sections/ProductionHighlightsSection"
 import { ProactiveTeamSection } from "@/src/routes/AboutUs/screens/sections/ProactiveTeamSection"
 import { SustainabilitySection } from "@/src/routes/AboutUs/screens/sections/SustainabilitySection"
+import { Feature197 } from "@/components/ui/accordion-feature-section"
 import Link from "next/link"
 
 const footerLinks = {
@@ -68,6 +69,37 @@ const footerBottomLinks = [
   { label: "TERMS & CONDITIONS", href: "/terms-conditions" },
 ]
 
+const aboutUsFeatures = [
+  {
+    id: 1,
+    title: "DRIVEN BY PURPOSE",
+    image: "/images/about-us/driven_by_purpose.webp",
+    description:
+      "We bring fresh ideas to the packaging world while caring for our beautiful planet.\n\nAs a next-generation packaging company, we're excited to innovate with our flexible solutions and strong commitment to sustainability.",
+  },
+  {
+    id: 2,
+    title: "CHASING EXCELLENCE",
+    image: "/images/about-us/chasing_excellence.webp",
+    description:
+      "Our goal is to make packaging simpler and more flexible for coffee roasters, offering quality solutions that fit your needs and values.",
+  },
+  {
+    id: 3,
+    title: "PROUDLY EUROPEAN",
+    image: "/images/about-us/proudly_european.webp",
+    description:
+      "Located along the beautiful coast of Baltic Sea, our talented team of over 50 dedicated members works hard every day.\n\nWe strive to reduce our carbon footprint by using renewable energy, sourcing certified materials, and carefully managing waste.",
+  },
+  {
+    id: 4,
+    title: "EXPANDING HORIZONS",
+    image: "/images/about-us/expanding_horizons.webp",
+    description:
+      "We proudly uphold European Union values and enjoy collaborating with top European coffee roasters and partners. Soon, we'll be expanding to the UK and USA!",
+  },
+]
+
 export function AboutUsContent() {
   return (
     <div className="relative w-full bg-[#ffffff] overflow-hidden">
@@ -118,80 +150,8 @@ export function AboutUsContent() {
         </div>
       </div>
 
-      <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
-        <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-[44px] text-center tracking-[0] leading-tight md:leading-[49px] mb-8 md:mb-10">
-          WE&apos;RE PASSIONATE ABOUT COFFEE!
-        </h2>
-
-        <div className="relative w-full bg-bg-beige rounded-[20px] p-6 sm:p-8 md:p-10 flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
-          <div className="flex-1 w-full lg:w-auto">
-            <CoffeePassionSection />
-          </div>
-
-          <div className="relative w-full max-w-[485px] h-[300px] sm:h-[400px] lg:h-[435px] bg-[#ffffff] rounded-[20px] flex-shrink-0">
-            <div className="w-full h-full relative overflow-hidden rounded-[20px]">
-              <img
-                className="absolute top-[15%] right-[15%] w-[30%] h-[15%] object-contain"
-                alt="Vector"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/vector-1.svg"
-              />
-
-              <img
-                className="absolute top-[20%] left-[60%] w-[18%] h-[8%] object-contain"
-                alt="Group"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/group-322.png"
-              />
-
-              <img
-                className="absolute top-[13%] right-[10%] w-[10%] h-[12%] object-contain"
-                alt="Ellipse"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/ellipse-80.svg"
-              />
-
-              <img
-                className="absolute top-[15%] right-[12%] w-[6%] h-[7%] object-contain"
-                alt="Image"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/--.svg"
-              />
-
-              <img
-                className="absolute top-[35%] right-[23%] w-[20%] h-[20%] object-contain"
-                alt="Vector"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/vector-24.svg"
-              />
-
-              <img
-                className="absolute top-[18%] right-[19%] w-[72%] h-[82%] object-cover"
-                alt="Stunning render"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/stunning-3d-render-earth-deep-blue-marble-b-1.png"
-              />
-
-              <img
-                className="absolute top-[48%] left-[71%] w-[29%] h-[52%] object-cover"
-                alt="Element"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/----------1-10.png"
-              />
-
-              <img
-                className="absolute top-0 left-[87%] w-[13%] h-[52%] object-cover"
-                alt="Element"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/----------1-10.png"
-              />
-
-              <img
-                className="absolute top-0 left-0 w-[51%] h-[24%] object-cover"
-                alt="Element"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/----------1-10.png"
-              />
-
-              <img
-                className="absolute top-0 left-[43%] w-[57%] h-[15%] object-cover"
-                alt="Element"
-                src="https://c.animaapp.com/mkvbxc2okqfhzF/img/----------1-10.png"
-              />
-            </div>
-          </div>
-        </div>
+      <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px]">
+        <Feature197 features={aboutUsFeatures} />
       </section>
 
       <section className="relative w-full px-4 sm:px-6 md:px-12 lg:px-[100px] py-8 md:py-10">
