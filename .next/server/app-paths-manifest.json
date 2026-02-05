@@ -5,5 +5,6 @@
   "/standup-bags/page": "app/standup-bags/page.js",
   "/drip-bags/page": "app/drip-bags/page.js",
   "/contact-us/page": "app/contact-us/page.js",
-  "/sustainability/page": "app/sustainability/page.js"
+  "/sustainability/page": "app/sustainability/page.js",
+  "/carton-boxes/page": "app/carton-boxes/page.js"
 }
