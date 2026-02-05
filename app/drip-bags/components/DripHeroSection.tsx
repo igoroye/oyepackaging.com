@@ -71,7 +71,7 @@ export function DripHeroSection() {
         <img
           className="w-full h-full object-cover"
           alt="Drip bags hero"
-          src="https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          src="/images/drip-bags/drip-bags.webp"
         />
       </div>
 
