@@ -15,19 +15,12 @@ export const CoffeeProductsSection = (): JSX.Element => {
               LEARN MORE
             </button>
             
-            {/* Decorative Images - Two bags */}
+            {/* Decorative Image */}
             <div className="absolute bottom-0 left-0 right-0 w-full h-[65%] flex items-end justify-center pointer-events-none">
-              {/* Left bag - tilted left, larger */}
               <img
-                className="absolute bottom-0 left-[5%] w-[42%] max-w-[280px] h-auto object-contain transform -rotate-[20deg]"
+                className="w-full h-full object-cover object-bottom"
                 alt=""
-                src="https://c.animaapp.com/mko0yo41F03JfF/img/coffee-packaging.png"
-              />
-              {/* Right bag - tilted right, slightly smaller and higher */}
-              <img
-                className="absolute bottom-[10%] right-[8%] w-[38%] max-w-[240px] h-auto object-contain transform rotate-[25deg]"
-                alt=""
-                src="https://c.animaapp.com/mko0yo41F03JfF/img/coffee-packaging.png"
+                src="/images/home-page/products-section.png"
               />
             </div>
           </div>
