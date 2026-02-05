@@ -637,23 +637,13 @@ export function ProductsContent() {
                 </Card>
 
                 <Card className="bg-bg-gray rounded-[20px] opacity-50 border-0">
-                  <CardContent className="p-6 relative h-[263px]">
-                    <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[95px] h-[95px] bg-white rounded-[47.5px] flex items-center justify-center">
-                      <img
-                        className="w-[95px] h-[95px]"
-                        alt="Tear notch"
-                        src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/mask-group-7.png"
-                      />
-                    </div>
+                  <CardContent className="p-6 relative h-[263px] flex items-center justify-center">
                     <img
-                      className="absolute bottom-8 left-1/2 -translate-x-1/2"
-                      alt="Tear illustration"
-                      src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/vector-31.svg"
+                      className="w-full h-full object-contain"
+                      alt="Top opening"
+                      src="/images/flat-bottom-bags/top-opening.png"
                     />
                   </CardContent>
-                  <p className="[font-family:'Inter',Helvetica] font-medium text-text text-sm text-center pb-4">
-                    TEAR NOTCH
-                  </p>
                 </Card>
               </div>
 
