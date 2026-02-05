@@ -127,7 +127,7 @@ export function StandupBagsContent() {
                         <img
                             className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
                             alt="ÖYE Logo"
-                            src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/group-239.png"
+                            src="/images/logo.svg"
                         />
                     </Link>
 
@@ -710,7 +710,7 @@ export function StandupBagsContent() {
                         <img
                             className="w-[147px] h-14 mb-6"
                             alt="Logo"
-                            src="https://c.animaapp.com/mkve5d5vXaRKB0/img/group-247.png"
+                            src="/images/logo.svg"
                         />
                         <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[22px] max-w-[402px]">
                             Say farewell to ordinary packaging and delays - we&apos;ve got your

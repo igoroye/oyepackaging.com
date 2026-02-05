@@ -94,7 +94,7 @@ export function ContactUsContent() {
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
               alt="ÖYE Logo"
-              src="https://c.animaapp.com/mkvehh2nHV8P1S/img/group-239.png"
+              src="/images/logo.svg"
             />
           </Link>
 
@@ -366,7 +366,7 @@ export function ContactUsContent() {
               <img
                 className="w-[147px] h-14 mb-4"
                 alt="Group"
-                src="https://c.animaapp.com/mkvehh2nHV8P1S/img/group-247.png"
+                src="/images/logo.svg"
               />
               <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[22px]">
                 Say farewell to ordinary packaging and delays - we&apos;ve got your

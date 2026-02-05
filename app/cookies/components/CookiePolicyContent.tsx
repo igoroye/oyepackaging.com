@@ -87,7 +87,7 @@ export function CookiePolicyContent() {
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
               alt="ÖYE Logo"
-              src="https://c.animaapp.com/mkveyannrOLJuY/img/group-239.png"
+              src="/images/logo.svg"
             />
           </Link>
 
@@ -400,7 +400,7 @@ export function CookiePolicyContent() {
               <img
                 className="w-[147px] h-14"
                 alt="ÖYE Packaging Logo"
-                src="https://c.animaapp.com/mkveyannrOLJuY/img/group-247.png"
+                src="/images/logo.svg"
               />
               <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[22px]">
                 Say farewell to ordinary packaging and delays - we&apos;ve got your back. Explore our diverse services and join us on an exciting journey!

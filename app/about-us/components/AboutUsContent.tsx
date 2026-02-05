@@ -208,7 +208,7 @@ export function AboutUsContent() {
             <img
               className="w-[120px] sm:w-[147px] h-auto mb-4 md:mb-6"
               alt="Group"
-              src="https://c.animaapp.com/mkvbxc2okqfhzF/img/group-247.png"
+              src="/images/logo.svg"
             />
             <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[22px]">
               Say farewell to ordinary packaging and delays - we&apos;ve got your

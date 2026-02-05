@@ -146,7 +146,7 @@ export default function HomePage() {
               <img
                 className="w-[120px] sm:w-[147px] h-auto"
                 alt="ÖYE Packaging Logo"
-                src="https://c.animaapp.com/mko0yo41F03JfF/img/group-247.png"
+                src="/images/logo.svg"
               />
               <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[22px]">
                 Say farewell to ordinary packaging and delays - we've got your

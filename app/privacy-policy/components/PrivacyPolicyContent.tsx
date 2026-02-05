@@ -71,7 +71,7 @@ export function PrivacyPolicyContent() {
             <img
               className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
               alt="ÖYE Logo"
-              src="https://c.animaapp.com/mkvenfnf8hUqCs/img/group-239.png"
+              src="/images/logo.svg"
             />
           </Link>
 
@@ -608,7 +608,7 @@ export function PrivacyPolicyContent() {
             <img
               className="w-[147px] h-14"
               alt="Group"
-              src="https://c.animaapp.com/mkvenfnf8hUqCs/img/group-247.png"
+              src="/images/logo.svg"
             />
           </div>
 

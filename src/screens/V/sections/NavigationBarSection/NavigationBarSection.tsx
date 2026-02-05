@@ -21,7 +21,7 @@ export const NavigationBarSection = (): JSX.Element => {
           <img
             className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
             alt="ÖYE Logo"
-            src="https://c.animaapp.com/mko0yo41F03JfF/img/group-239.png"
+            src="/images/logo.svg"
           />
         </Link>
 
