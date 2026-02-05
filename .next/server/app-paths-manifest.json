@@ -1,9 +1,9 @@
 {
-  "/products/page": "app/products/page.js",
   "/page": "app/page.js",
   "/standup-bags/page": "app/standup-bags/page.js",
   "/about-us/page": "app/about-us/page.js",
   "/carton-boxes/page": "app/carton-boxes/page.js",
   "/services/page": "app/services/page.js",
-  "/drip-bags/page": "app/drip-bags/page.js"
+  "/drip-bags/page": "app/drip-bags/page.js",
+  "/brew-bags/page": "app/brew-bags/page.js"
 }
