@@ -20,9 +20,12 @@ export default function DripBagsPage() {
     <div className="min-h-screen bg-white">
       <NavigationBarSection />
 
-      <ServicesSidebar />
+      <div className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px]">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col xl:flex-row gap-6">
+            <ServicesSidebar />
 
-      <main className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px] xl:pl-[414px] xl:pr-[100px]">
+            <main className="flex-1 min-w-0">
         <DripHeroSection />
 
         <DripInfoSection />
@@ -34,7 +37,10 @@ export default function DripBagsPage() {
         <WhereToOfferSection />
 
         <DripCTASection />
-      </main>
+            </main>
+          </div>
+        </div>
+      </div>
 
       <FooterSection />
     </div>

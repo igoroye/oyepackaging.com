@@ -303,7 +303,10 @@ export function BrewBagsContent() {
         )}
       </header>
 
-      <aside className="hidden xl:flex fixed left-[100px] top-[132px] flex-col gap-3 z-40">
+      <div className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px]">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col xl:flex-row gap-6">
+            <aside className="hidden xl:flex sticky top-0 self-start flex-col gap-3 flex-shrink-0">
         {sidebarItems.map((item, index) => (
           <Link key={index} href={item.href}>
             <Card
@@ -343,9 +346,9 @@ export function BrewBagsContent() {
             </Card>
           </Link>
         ))}
-      </aside>
+            </aside>
 
-      <main className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px] xl:pl-[414px] xl:pr-[100px]">
+            <main className="flex-1 min-w-0">
         <section className="mb-16">
           <img
             className="w-full max-w-[925px] h-[380px] mx-auto object-cover rounded-[20px]"
@@ -603,7 +606,10 @@ export function BrewBagsContent() {
             </Card>
           </div>
         </section>
-      </main>
+            </main>
+          </div>
+        </div>
+      </div>
 
       <footer className="mt-12 md:mt-24 px-4 sm:px-6 md:px-12 lg:px-[100px] pb-8">
         <div className="max-w-[1240px] mx-auto">

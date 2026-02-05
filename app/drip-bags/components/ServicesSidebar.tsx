@@ -68,7 +68,7 @@ function ServiceIcon({ type, active }: { type: string; active?: boolean }) {
 
 export function ServicesSidebar() {
   return (
-    <aside className="hidden xl:flex fixed left-[100px] top-[132px] flex-col gap-3 z-40">
+    <aside className="hidden xl:flex sticky top-0 self-start flex-col gap-3 flex-shrink-0">
       {sidebarItems.map((item, index) => (
         <Link key={index} href={item.href}>
           <Card

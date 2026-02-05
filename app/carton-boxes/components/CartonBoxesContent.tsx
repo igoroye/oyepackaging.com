@@ -268,8 +268,10 @@ export function CartonBoxesContent() {
         )}
       </header>
 
-      <main className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pl-[414px]">
-        <aside className="hidden xl:flex fixed left-[100px] top-[132px] flex-col gap-3 z-40">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col xl:flex-row gap-6">
+            <aside className="hidden xl:flex sticky top-[132px] self-start flex-col gap-3 flex-shrink-0">
           <Link href="/products">
             <Card className="w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors">
               <CardContent className="flex items-center gap-4 p-0 h-full px-6">
@@ -318,9 +320,10 @@ export function CartonBoxesContent() {
               </span>
             </CardContent>
           </Card>
-        </aside>
+            </aside>
 
-        <section className="pt-8 pb-16">
+            <main className="flex-1 min-w-0">
+              <section className="pt-8 pb-16">
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-between">
             <div className="relative flex justify-center lg:justify-start flex-shrink-0">
               <div className="w-full max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[700px] h-[380px] bg-bg-beige rounded-[20px] flex items-center justify-center relative">
@@ -377,9 +380,9 @@ export function CartonBoxesContent() {
               </div>
             </div>
           </div>
-        </section>
+              </section>
 
-        <Card className="mb-16 rounded-[20px] border border-[#101014]">
+              <Card className="mb-16 rounded-[20px] border border-[#101014]">
           <CardContent className="p-4 sm:p-6 md:p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="flex items-center gap-6">
@@ -415,9 +418,9 @@ export function CartonBoxesContent() {
               </div>
             </div>
           </CardContent>
-        </Card>
+              </Card>
 
-        <section className="mb-16">
+              <section className="mb-16">
           <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-3xl tracking-[-0.60px] leading-[49px] text-center mb-8">
             СUSTOMIZATION OPTIONS
           </h2>
@@ -638,9 +641,9 @@ export function CartonBoxesContent() {
               </div>
             </CardContent>
           </Card>
-        </section>
+              </section>
 
-        <section className="mb-16">
+              <section className="mb-16">
           <Card className="bg-[#f7f7f8] rounded-[20px] border-0">
             <CardContent className="p-4 sm:p-6 md:p-8">
               <h2 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg sm:text-[22px] leading-[39px] mb-8 text-center">
@@ -686,9 +689,9 @@ export function CartonBoxesContent() {
               </div>
             </CardContent>
           </Card>
-        </section>
+              </section>
 
-        <section className="mb-16">
+              <section className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <Card className="relative overflow-hidden rounded-[20px] border-0">
               <img
@@ -728,8 +731,11 @@ export function CartonBoxesContent() {
               </CardContent>
             </Card>
           </div>
-        </section>
-      </main>
+              </section>
+              </main>
+          </div>
+        </div>
+      </div>
 
       <footer className="bg-white border-t border-gray-200">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] py-8">

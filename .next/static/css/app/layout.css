@@ -674,6 +674,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -1575,6 +1578,9 @@ video {
 .min-w-\[var\(--radix-select-trigger-width\)\] {
   min-width: var(--radix-select-trigger-width);
 }
+.min-w-0 {
+  min-width: 0px;
+}
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1926,6 +1932,9 @@ video {
 }
 .divide-\[\#101014\]\/30 > :not([hidden]) ~ :not([hidden]) {
   border-color: rgb(16 16 20 / 0.3);
+}
+.self-start {
+  align-self: flex-start;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -3947,6 +3956,10 @@ video {
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:pl-\[414px\] {
