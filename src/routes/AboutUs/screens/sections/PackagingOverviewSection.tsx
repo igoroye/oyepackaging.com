@@ -40,10 +40,9 @@ const cardsData = [
     hasBorder: true,
   },
   {
-    type: "stat",
-    value: "10+ YEARS IN PACKAGING",
-    label: "COUNTRIES WE SERVE",
-    valueSize: "text-[40px]",
+    type: "image",
+    src: "/images/about-us/countries.png",
+    alt: "Countries we serve",
   },
   {
     type: "gradient-text",
@@ -90,13 +89,13 @@ export const PackagingOverviewSection = (): JSX.Element => {
                   <div className="flex flex-col items-center justify-center w-full h-full bg-white">
                     <div
                       className={`[font-family:'Inter',Helvetica] font-bold text-main text-center tracking-[0] leading-[50px] px-[51px] ${
-                        card.valueSize || "text-[70px]"
+                        "valueSize" in card ? card.valueSize : "text-[70px]"
                       }`}
                     >
-                      {card.value}
+                      {"value" in card && card.value}
                     </div>
                     <div className="[font-family:'Inter',Helvetica] font-medium text-[#101014] text-[22px] text-center tracking-[0] leading-[30px] mt-6 px-[34px]">
-                      {card.label}
+                      {"label" in card && card.label}
                     </div>
                   </div>
                 )}
