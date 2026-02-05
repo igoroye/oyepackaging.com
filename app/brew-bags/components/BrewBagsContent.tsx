@@ -306,7 +306,7 @@ export function BrewBagsContent() {
       <div className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px]">
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-col xl:flex-row gap-6">
-            <aside className="hidden xl:flex sticky top-0 self-start flex-col gap-3 flex-shrink-0">
+            <aside className="hidden xl:flex sticky top-[132px] self-start flex-col gap-3 flex-shrink-0">
         {sidebarItems.map((item, index) => (
           <Link key={index} href={item.href}>
             <Card
