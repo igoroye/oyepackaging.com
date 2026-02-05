@@ -321,8 +321,8 @@ export function ContactUsContent() {
             <div className="relative">
               <img
                 className="w-full h-auto max-w-[638px] object-cover"
-                alt="Mask group"
-                src="https://c.animaapp.com/mkvehh2nHV8P1S/img/mask-group.png"
+                alt="Contact us"
+                src="/images/contact-us/contact-us.png"
               />
 
               <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
