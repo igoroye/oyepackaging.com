@@ -3,5 +3,6 @@
   "/products/page": "app/products/page.js",
   "/drip-bags/page": "app/drip-bags/page.js",
   "/brew-bags/page": "app/brew-bags/page.js",
-  "/services/page": "app/services/page.js"
+  "/services/page": "app/services/page.js",
+  "/cold-brew-bags/page": "app/cold-brew-bags/page.js"
 }
