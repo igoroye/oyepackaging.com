@@ -321,31 +321,12 @@ export function CartonBoxesContent() {
         <section className="pt-8 pb-16">
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-between">
             <div className="relative flex justify-center lg:justify-start flex-shrink-0">
-              <div className="w-full max-w-[400px] h-[380px] bg-bg-beige rounded-[20px] flex items-center justify-center relative">
+              <div className="w-full max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[700px] h-[380px] bg-bg-beige rounded-[20px] flex items-center justify-center relative">
                 <img
                   className="w-[239px] h-[197px] object-cover"
                   alt="Carton Box"
                   src="https://c.animaapp.com/mkve5d5vXaRKB0/img/----------2-1.png"
                 />
-
-                <div className="absolute top-[10px] left-[75px] flex items-center gap-[3px] px-3 py-2 bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm">
-                  <img
-                    className="w-[15px] h-[15px]"
-                    alt="Hand zoom in"
-                    src="https://c.animaapp.com/mkve5d5vXaRKB0/img/hand-zoom-in-1.svg"
-                  />
-                  <span className="[font-family:'Inter',Helvetica] font-normal text-text text-[10px] whitespace-nowrap">
-                    HOLD AND ROTATE
-                  </span>
-                </div>
-
-                <div className="absolute top-[10px] left-[263px] w-[27px] h-[27px] bg-[#ffffff38] rounded-[60px] border border-white rotate-90 backdrop-blur-sm flex items-center justify-center">
-                  <img
-                    className="w-[15px] h-[15px] -rotate-90"
-                    alt="Cursor finger click"
-                    src="https://c.animaapp.com/mkve5d5vXaRKB0/img/cursor-finger-click-1.svg"
-                  />
-                </div>
               </div>
             </div>
 

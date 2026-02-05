@@ -264,33 +264,12 @@ export function StandupBagsContent() {
                 <section className="pt-8 pb-16">
                     <div className="flex flex-col lg:flex-row gap-8 items-start justify-between">
                         <div className="relative flex justify-center lg:justify-start flex-shrink-0">
-                            <div className="w-full max-w-[550px] h-[450px] bg-bg-beige rounded-[20px] flex items-center justify-center relative">
+                            <div className="w-full max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[700px] h-[450px] bg-bg-beige rounded-[20px] flex items-center justify-center relative">
                                 <img
                                     className="w-[177px] h-[323px] object-cover"
                                     alt="Standup bag"
                                     src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/matte-coffee-bag-mockup-02-2.png"
                                 />
-
-                                <div className="hidden absolute top-[10px] left-1/2 -translate-x-1/2 flex items-center gap-2">
-                                    <Badge className="h-[27px] px-3 py-2 bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm flex items-center gap-[3px]">
-                                        <img
-                                            className="w-[15px] h-[15px]"
-                                            alt="Hand zoom in"
-                                            src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/hand-zoom-in-1.svg"
-                                        />
-                                        <span className="[font-family:'Inter',Helvetica] font-normal text-text text-[10px]">
-                                            HOLD AND ROTATE
-                                        </span>
-                                    </Badge>
-
-                                    <div className="w-[27px] h-[27px] bg-[#ffffff38] rounded-[60px] border border-white backdrop-blur-sm rotate-90 flex items-center justify-center">
-                                        <img
-                                            className="w-[15px] h-[15px]"
-                                            alt="Cursor finger click"
-                                            src="https://c.animaapp.com/mko1bcw3ZdsnAC/img/cursor-finger-click-1.svg"
-                                        />
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
