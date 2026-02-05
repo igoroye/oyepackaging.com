@@ -233,7 +233,7 @@ export function ColdBrewBagsContent() {
               PRODUCTS
             </Link>
             <Link
-              href="/services"
+              href="/drip-bags"
               className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors"
             >
               SERVICES
@@ -277,7 +277,7 @@ export function ColdBrewBagsContent() {
                 PRODUCTS
               </Link>
               <Link
-                href="/services"
+                href="/drip-bags"
                 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >

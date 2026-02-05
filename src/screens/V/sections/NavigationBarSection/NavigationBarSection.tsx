@@ -7,7 +7,7 @@ import { Button } from "../../../../components/ui/button";
 
 const navigationLinks = [
   { label: "PRODUCTS", href: "/products" },
-  { label: "SERVICES", href: "/services" }
+  { label: "SERVICES", href: "/drip-bags" }
 ];
 
 export const NavigationBarSection = (): JSX.Element => {
