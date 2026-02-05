@@ -5,5 +5,6 @@
   "/carton-boxes/page": "app/carton-boxes/page.js",
   "/services/page": "app/services/page.js",
   "/drip-bags/page": "app/drip-bags/page.js",
-  "/brew-bags/page": "app/brew-bags/page.js"
+  "/brew-bags/page": "app/brew-bags/page.js",
+  "/cold-brew-bags/page": "app/cold-brew-bags/page.js"
 }
