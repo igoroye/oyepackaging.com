@@ -72,27 +72,31 @@ export function ServicesSidebar() {
       {sidebarItems.map((item, index) => (
         <Link key={index} href={item.href}>
           <Card
-            className={`w-[294px] h-[65px] rounded-[10px] cursor-pointer hover:shadow-md transition-shadow ${
+            className={`w-[294px] h-[88px] cursor-pointer transition-all ${
               item.active
-                ? 'bg-white shadow-[0px_5px_16px_-1px_rgba(0,0,0,0.15)]'
-                : 'bg-white opacity-60 hover:opacity-80'
+                ? 'bg-[#e8eef5] rounded-[20px] border-0 shadow-none'
+                : 'bg-white rounded-[20px] border-0 shadow-none hover:bg-gray-50'
             }`}
           >
-            <CardContent className="flex items-center gap-3 p-4 h-full">
-              <ServiceIcon type={item.icon} active={item.active} />
+            <CardContent className="flex items-center gap-4 p-0 h-full px-6">
+              <div className="w-10 h-10 flex items-center justify-center">
+                <ServiceIcon type={item.icon} active={item.active} />
+              </div>
               <div className="flex flex-col">
                 <span
-                  className={`font-${item.active ? 'medium' : 'semibold'} ${
-                    item.active ? 'text-main' : 'opacity-40 text-text'
-                  } text-lg`}
+                  className={`[font-family:'Inter',Helvetica] text-lg tracking-[0] leading-[normal] ${
+                    item.active
+                      ? 'font-semibold text-main'
+                      : 'font-medium text-text opacity-40'
+                  }`}
                 >
                   {item.title}
                 </span>
                 {item.badge && (
                   <span
-                    className={`font-medium ${
-                      item.active ? 'text-main' : 'opacity-40 text-text'
-                    } text-[10px]`}
+                    className={`[font-family:'Inter',Helvetica] font-medium text-[10px] ${
+                      item.active ? 'text-main' : 'text-text opacity-40'
+                    }`}
                   >
                     {item.badge}
                   </span>

@@ -313,33 +313,35 @@ export function ColdBrewBagsContent() {
         {sidebarItems.map((item, index) => (
           <Link key={index} href={item.href}>
             <Card
-              className={`w-[294px] h-[65px] rounded-[10px] cursor-pointer hover:shadow-md transition-shadow ${
+              className={`w-[294px] h-[88px] cursor-pointer transition-all ${
                 item.isActive
-                  ? "bg-white shadow-[0px_5px_16px_-1px_#00000026]"
-                  : "bg-white opacity-60"
+                  ? "bg-[#e8eef5] rounded-[20px] border-0 shadow-none"
+                  : "bg-white rounded-[20px] border-0 shadow-none hover:bg-gray-50"
               }`}
             >
-              <CardContent className="flex items-center gap-3 p-4 h-full">
-                <img
-                  className="w-[31px] h-[31px]"
-                  alt={item.label}
-                  src={item.icon}
-                />
+              <CardContent className="flex items-center gap-4 p-0 h-full px-6">
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    className="w-[31px] h-[31px]"
+                    alt={item.label}
+                    src={item.icon}
+                  />
+                </div>
                 <div className="flex flex-col">
                   <span
-                    className={`[font-family:'Inter',Helvetica] ${
+                    className={`[font-family:'Inter',Helvetica] text-lg tracking-[0] leading-[normal] ${
                       item.isActive
-                        ? "font-medium text-main"
-                        : "font-semibold opacity-40 text-text"
-                    } text-lg`}
+                        ? "font-semibold text-main"
+                        : "font-medium text-text opacity-40"
+                    }`}
                   >
                     {item.label}
                   </span>
                   {item.comingSoon && (
                     <span
-                      className={`[font-family:'Inter',Helvetica] font-medium ${
-                        item.isActive ? "text-main" : "opacity-40 text-text"
-                      } text-[10px]`}
+                      className={`[font-family:'Inter',Helvetica] font-medium text-[10px] ${
+                        item.isActive ? "text-main" : "text-text opacity-40"
+                      }`}
                     >
                       COMING SOON
                     </span>
