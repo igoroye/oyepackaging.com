@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -14,6 +17,7 @@ const accordionItems = [
       "Design the packaging that suits your brand perfectly with our intuitive, step-by-step configurator. Enjoy complete freedom in selecting materials, print options, finishes, and add-ons, while controlling a price tailored to your needs.",
     hasButton: true,
     buttonText: "SIGN UP",
+    image: "/images/home-page/oye-innovations/packagin-configurator.png",
   },
   {
     value: "test-print",
@@ -22,6 +26,7 @@ const accordionItems = [
       "Want to test your design before ordering? We've got you covered! We'll print it and deliver it to your doorstep within 10 days so you can review and adjust it before placing your final order.",
     hasButton: true,
     buttonText: "SIGN UP",
+    image: "/images/home-page/oye-innovations/test-print.png",
   },
   {
     value: "3d-previews",
@@ -30,6 +35,7 @@ const accordionItems = [
       "Need pictures of your new designer bags? We've got you covered! Simply upload your design to our design service and receive a 3D model that can be used for any purpose.",
     hasButton: true,
     buttonText: "LEARN MORE",
+    image: "/images/home-page/oye-innovations/3d-previews.png",
   },
   {
     value: "product-photoshoot",
@@ -38,10 +44,14 @@ const accordionItems = [
       "Showcase your packaging at its best! After printing, we'll conduct a professional photoshoot to capture high-quality photo of your final product. Perfect for marketing, e-commerce, or social media.",
     hasButton: true,
     buttonText: "CONTACT US",
+    image: "/images/home-page/oye-innovations/product-photoshoot.png",
   },
 ];
 
 export const PackagingConfiguratorSection = (): JSX.Element => {
+  const [activeValue, setActiveValue] = useState("packaging-configurator");
+
+  const currentImage = accordionItems.find(item => item.value === activeValue)?.image || accordionItems[0].image;
   return (
     <section className="relative w-full py-8 md:py-12 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mb-6 md:mb-[30px]">
@@ -56,7 +66,8 @@ export const PackagingConfiguratorSection = (): JSX.Element => {
             <Accordion
               type="single"
               collapsible
-              defaultValue="packaging-configurator"
+              value={activeValue}
+              onValueChange={setActiveValue}
               className="w-full"
             >
               {accordionItems.map((item, index) => (
@@ -92,25 +103,13 @@ export const PackagingConfiguratorSection = (): JSX.Element => {
             </Accordion>
           </div>
 
-          <div className="relative flex items-center justify-end min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] pr-0 lg:pr-8">
-            {/* Decorative circles - top left */}
-            <div className="absolute top-[60px] sm:top-[80px] lg:top-[100px] left-0 sm:left-8 lg:left-12 z-10 flex items-center gap-2">
-              <div className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px] rounded-full border-2 border-text/20 flex items-center justify-center bg-white">
-                <img
-                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] lg:w-[60px] lg:h-[60px]"
-                  alt="Edit icon"
-                  src="https://c.animaapp.com/mko0yo41F03JfF/img/group-251.png"
-                />
-              </div>
-              <div className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full border-2 border-text/20 bg-white"></div>
-            </div>
-
-            {/* Packaging bag - tilted to the right */}
-            <div className="relative w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[450px] h-[350px] sm:h-[420px] lg:h-[500px]">
+          <div className="relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
+            <div className="relative w-full h-[350px] sm:h-[420px] lg:h-[500px] flex items-center justify-center">
               <img
-                className="absolute inset-0 w-full h-full object-contain transform rotate-[15deg] origin-center"
-                alt="Product packaging"
-                src="/images/home-page/slider-1.png"
+                key={activeValue}
+                className="w-full h-full object-contain transition-opacity duration-300"
+                alt={accordionItems.find(item => item.value === activeValue)?.title || "Product"}
+                src={currentImage}
               />
             </div>
           </div>
