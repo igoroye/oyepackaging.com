@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { NavigationBarSection } from '@/src/screens/V/sections/NavigationBarSection/NavigationBarSection'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 import { ServicesSidebar } from './components/ServicesSidebar'
 import { DripHeroSection } from './components/DripHeroSection'
 import { DripInfoSection } from './components/DripInfoSection'
@@ -7,7 +8,6 @@ import { CustomizationDripSection } from './components/CustomizationDripSection'
 import { HowItWorksSection } from './components/HowItWorksSection'
 import { WhereToOfferSection } from './components/WhereToOfferSection'
 import { DripCTASection } from './components/DripCTASection'
-import { FooterSection } from '../products/components/FooterSection'
 
 export const metadata: Metadata = {
   title: 'Drip Bags - Coffee Packaging Services | ÖYE Packaging',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function DripBagsPage() {
   return (
     <div className="min-h-screen bg-white">
-      <NavigationBarSection />
+      <Header />
 
       <div className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px]">
         <div className="max-w-[1240px] mx-auto">
@@ -42,7 +42,7 @@ export default function DripBagsPage() {
         </div>
       </div>
 
-      <FooterSection />
+      <Footer />
     </div>
   )
 }

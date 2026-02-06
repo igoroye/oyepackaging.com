@@ -1,8 +1,8 @@
 'use client'
 
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { useState } from "react"
+import { Header } from "@/components/layout/Header"
+import { Footer } from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
@@ -208,100 +208,9 @@ const sidebarItems = [
 ]
 
 export function BrewBagsContent() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="relative min-h-screen bg-white">
-      <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
-        <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px] flex items-center justify-between">
-          <div className="max-w-[1240px] mx-auto w-full flex items-center justify-between">
-          <Link href="/">
-            <img
-              className="w-[100px] sm:w-[125px] h-auto cursor-pointer"
-              alt="ÖYE Logo"
-              src="/images/logo.svg"
-            />
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-12">
-            <Link
-              href="/flat-bottom-bags"
-              className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors"
-            >
-              PRODUCTS
-            </Link>
-            <Link
-              href="/drip-bags"
-              className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors"
-            >
-              SERVICES
-            </Link>
-          </div>
-
-          <div className="hidden lg:flex items-center gap-2">
-            <Button
-              variant="outline"
-              className="h-auto px-6 py-4 bg-white rounded-[40px] border-2 border-[#264eab] hover:bg-gray-50 transition-colors"
-            >
-              <span className="[font-family:'Inter',Helvetica] font-medium text-main text-lg tracking-[0.54px] leading-[normal]">
-                CONFIGURE PACKAGING
-              </span>
-            </Button>
-
-            <Button className="h-auto px-6 py-4 bg-main rounded-[40px] border-2 border-[#264eab] hover:bg-[#1e3d8f] transition-colors">
-              <span className="text-white text-lg tracking-[0.54px] [font-family:'Inter',Helvetica] font-medium leading-[normal]">
-                SIGN IN
-              </span>
-            </Button>
-          </div>
-
-          <button
-            className="lg:hidden p-2 text-text hover:text-main transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-          </div>
-        </nav>
-
-        {mobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 animate-fade-in">
-            <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col gap-4">
-              <Link
-                href="/flat-bottom-bags"
-                className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                PRODUCTS
-              </Link>
-              <Link
-                href="/drip-bags"
-                className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                SERVICES
-              </Link>
-              <div className="flex flex-col gap-3 mt-4">
-                <Button
-                  variant="outline"
-                  className="h-auto px-6 py-3 bg-white rounded-[40px] border-2 border-[#264eab] hover:bg-gray-50 transition-colors w-full"
-                >
-                  <span className="[font-family:'Inter',Helvetica] font-medium text-main text-base tracking-[0.54px] leading-[normal]">
-                    CONFIGURE PACKAGING
-                  </span>
-                </Button>
-
-                <Button className="h-auto px-6 py-3 bg-main rounded-[40px] border-2 border-[#264eab] hover:bg-[#1e3d8f] transition-colors w-full">
-                  <span className="text-white text-base tracking-[0.54px] [font-family:'Inter',Helvetica] font-medium leading-[normal]">
-                    SIGN IN
-                  </span>
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
-      </header>
+      <Header />
 
       <div className="pt-8 px-4 sm:px-6 md:px-12 lg:px-[100px] xl:pt-[132px]">
         <div className="max-w-[1240px] mx-auto">
@@ -613,92 +522,7 @@ export function BrewBagsContent() {
         </div>
       </div>
 
-      <footer className="mt-12 md:mt-24 px-4 sm:px-6 md:px-12 lg:px-[100px] pb-8">
-        <div className="max-w-[1240px] mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0 mb-8 md:mb-12">
-            <div className="flex-shrink-0 max-w-full lg:max-w-[402px]">
-              <img
-                className="w-[147px] h-14 mb-6"
-                alt="Logo"
-                src="/images/logo.svg"
-              />
-              <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[22px]">
-                Say farewell to ordinary packaging and delays - we've got your
-                back. Explore our diverse services and join us on an exciting
-                journey!
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
-              {footerSections.map((section, index) => (
-                <div key={index}>
-                  <h3 className="[font-family:'Inter',Helvetica] font-semibold text-text text-lg tracking-[0] leading-6 mb-4">
-                    {section.title}
-                  </h3>
-                  <ul className="space-y-2">
-                    {section.links.map((link, linkIndex) => (
-                      <li key={linkIndex}>
-                        <Link
-                          href={link.href}
-                          className={`[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-6 hover:text-main transition-colors ${
-                            'opacity' in link && link.opacity ? "opacity-50" : ""
-                          }`}
-                        >
-                          {link.text}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <Separator className="mb-4" />
-
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm tracking-[0] leading-[30px]">
-              COPYRIGHT © 2024 ÖYE PACKAGING
-            </p>
-
-            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
-              <Link
-                href="/privacy-policy"
-                className="[font-family:'Inter',Helvetica] font-medium text-text text-sm tracking-[0] leading-[30px] hover:underline"
-              >
-                PRIVACY POLICY
-              </Link>
-              <Link
-                href="/cookies"
-                className="[font-family:'Inter',Helvetica] font-medium text-text text-sm tracking-[0] leading-[30px] hover:underline"
-              >
-                COOKIES
-              </Link>
-              <Link
-                href="/terms-conditions"
-                className="[font-family:'Inter',Helvetica] font-medium text-text text-sm tracking-[0] leading-[30px] hover:underline"
-              >
-                TERMS & CONDITIONS
-              </Link>
-            </div>
-
-            <div className="flex items-center gap-2">
-              {socialIcons.map((social, index) => (
-                <button
-                  key={index}
-                  className={`w-10 h-10 rounded-[10px] flex items-center justify-center transition-colors ${
-                    index === 1
-                      ? "bg-main"
-                      : "border border-[#7ba0d0] hover:bg-gray-50"
-                  }`}
-                >
-                  <img className="w-5 h-5" alt={social.alt} src={social.icon} />
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
