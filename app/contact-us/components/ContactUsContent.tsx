@@ -101,7 +101,7 @@ export function ContactUsContent() {
 
           <div className="hidden lg:flex items-center gap-12">
             <Link
-              href="/products"
+              href="/flat-bottom-bags"
               className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors"
             >
               PRODUCTS
@@ -145,7 +145,7 @@ export function ContactUsContent() {
           <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 animate-fade-in">
             <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col gap-4">
               <Link
-                href="/products"
+                href="/flat-bottom-bags"
                 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >

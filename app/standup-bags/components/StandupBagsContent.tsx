@@ -134,7 +134,7 @@ export function StandupBagsContent() {
 
                     <div className="hidden lg:flex items-center gap-12">
                         <Link
-                            href="/products"
+                            href="/flat-bottom-bags"
                             className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors"
                         >
                             PRODUCTS
@@ -178,7 +178,7 @@ export function StandupBagsContent() {
                     <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 animate-fade-in">
                         <div className="container mx-auto px-4 sm:px-6 py-6 flex flex-col gap-4">
                             <Link
-                                href="/products"
+                                href="/flat-bottom-bags"
                                 className="[font-family:'Inter',Helvetica] font-medium text-text text-lg tracking-[0] leading-[normal] hover:text-main transition-colors text-left py-2"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
@@ -215,7 +215,7 @@ export function StandupBagsContent() {
                 <div className="max-w-[1240px] mx-auto">
                     <div className="flex flex-col xl:flex-row gap-6">
                         <aside className="hidden xl:flex sticky top-[132px] self-start flex-col gap-3 flex-shrink-0">
-                    <Link href="/products">
+                    <Link href="/flat-bottom-bags">
                         <Card className="w-[294px] h-[88px] bg-white rounded-[20px] border-0 shadow-none cursor-pointer hover:bg-gray-50 transition-colors">
                             <CardContent className="flex items-center gap-4 p-0 h-full px-6">
                                 <div className="w-10 h-10 flex items-center justify-center">
