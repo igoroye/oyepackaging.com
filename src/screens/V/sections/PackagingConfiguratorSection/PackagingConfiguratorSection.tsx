@@ -43,12 +43,14 @@ const accordionItems = [
 
 export const PackagingConfiguratorSection = (): JSX.Element => {
   return (
-    <section className="relative w-full flex flex-col gap-6 md:gap-[30px] px-4 sm:px-6 md:px-8 lg:px-12 py-8 md:py-12 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-      <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-[44px] tracking-[0] leading-tight md:leading-[49px]">
-        ÖYE INNOVATIONS
-      </h2>
+    <section className="relative w-full py-8 md:py-12 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+      <div className="max-w-[1240px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mb-6 md:mb-[30px]">
+        <h2 className="[font-family:'Inter',Helvetica] font-semibold text-text text-2xl sm:text-3xl md:text-[44px] tracking-[0] leading-tight md:leading-[49px]">
+          ÖYE INNOVATIONS
+        </h2>
+      </div>
 
-      <div className="relative w-full max-w-[1240px] mx-auto">
+      <div className="relative w-full max-w-[1240px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="bg-bg-beige rounded-[20px] p-6 sm:p-8 md:p-10 lg:p-[60px] grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <div className="flex flex-col items-start">
             <Accordion

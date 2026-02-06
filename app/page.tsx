@@ -116,9 +116,9 @@ export default function HomePage() {
 
       <CoffeeProductsSection />
 
-      <section className="relative w-full">
+      <section className="relative w-full overflow-hidden">
         <img
-          className="absolute top-0 right-[-87px] w-[1625px] h-[726px] pointer-events-none hidden xl:block"
+          className="absolute top-0 left-0 w-full h-[726px] pointer-events-none hidden xl:block object-cover"
           alt="Background decoration"
           src="https://c.animaapp.com/mko0yo41F03JfF/img/bg.svg"
         />
