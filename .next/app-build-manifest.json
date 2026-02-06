@@ -25,6 +25,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/drip-bags/page.js"
+    ],
+    "/flat-bottom-bags/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/flat-bottom-bags/page.js"
     ]
   }
 }
