@@ -2041,6 +2041,9 @@ video {
 .overflow-x-hidden {
   overflow-x: hidden;
 }
+.overflow-x-clip {
+  overflow-x: clip;
+}
 .scroll-smooth {
   scroll-behavior: smooth;
 }

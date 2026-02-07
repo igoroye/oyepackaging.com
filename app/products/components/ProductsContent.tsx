@@ -116,7 +116,7 @@ export function ProductsContent() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
+    <div className="min-h-screen bg-white overflow-x-clip">
       <header className="w-full bg-transparent py-4 md:py-6 relative z-50">
         <nav className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-[100px]">
           <div className="max-w-[1240px] mx-auto flex items-center justify-between">
