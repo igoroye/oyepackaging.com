@@ -78,15 +78,21 @@ export interface FeaturesStepConfig {
 export interface TouchAndFeelOption {
   id: string
   label: string
+  icon: 'hand' | 'waves' | 'sparkles'
   enabled: boolean
   defaultSelected: boolean
+  title: string
+  description: string
+  sustainabilityRating: number
+  maxRating: number
+  moqThreshold?: number
+  moqWarningText?: string
+  showMoqWarning: boolean
 }
 
 export interface TouchAndFeelStepConfig {
   options: TouchAndFeelOption[]
   selectionMode: 'single' | 'multi'
-  aboutTitle: string
-  aboutText: string
   infoText: string
 }
 

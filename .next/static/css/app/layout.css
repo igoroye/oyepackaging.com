@@ -2418,6 +2418,9 @@ video {
 .bg-center {
   background-position: center;
 }
+.fill-text {
+  fill: var(--text);
+}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -2888,6 +2891,10 @@ video {
 }
 .text-white {
   color: var(--white);
+}
+.text-\[\#dc2626\] {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
 }
 .underline {
   text-decoration-line: underline;
