@@ -1,5 +1,6 @@
 {
   "/page": "app/page.js",
   "/configurator/page": "app/configurator/page.js",
-  "/configurator/[slug]/page": "app/configurator/[slug]/page.js"
+  "/configurator/[slug]/page": "app/configurator/[slug]/page.js",
+  "/flat-bottom-bags/page": "app/flat-bottom-bags/page.js"
 }
