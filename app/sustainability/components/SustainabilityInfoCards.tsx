@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card"
 export function SustainabilityInfoCards() {
   return (
     <section className="relative w-full py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <Card className="rounded-[20px] bg-white border border-gray-100 shadow-none overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <Card className="rounded-[20px] bg-white border border-gray-100 shadow-none overflow-hidden lg:col-span-2">
           <CardContent className="p-0 relative min-h-[420px] flex flex-col">
             <div className="px-6 sm:px-8 pt-8 pb-52 flex-1">
               <h2 className="[font-family:'Inter',Helvetica] font-semibold text-2xl sm:text-3xl leading-tight text-text tracking-[0] mb-6">

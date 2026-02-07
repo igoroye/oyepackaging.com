@@ -7,8 +7,8 @@ export function ScopeOfFocusSection() {
         OUR SCOPE OF FOCUS TILL 2030
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <Card className="bg-transparent border-0 rounded-[20px] overflow-hidden relative min-h-[380px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <Card className="bg-transparent border-0 rounded-[20px] overflow-hidden relative min-h-[380px] md:col-span-2">
           <img
             src="/images/sustainability/renewable-energy.webp"
             alt="Renewable energy"
@@ -26,7 +26,7 @@ export function ScopeOfFocusSection() {
           </CardContent>
         </Card>
 
-        <Card className="bg-[linear-gradient(23deg,rgba(215,224,238,1)_0%,rgba(15,156,90,1)_100%)] border-0 rounded-[20px] overflow-hidden min-h-[380px]">
+        <Card className="bg-[#e8f0eb] border-0 rounded-[20px] overflow-hidden min-h-[380px]">
           <CardContent className="p-8 flex flex-col items-center justify-center h-full text-center gap-6">
             <p className="[font-family:'Inter',Helvetica] font-semibold text-text text-lg sm:text-xl md:text-[22px] tracking-[0] leading-tight">
               OFFSET EMISSIONS
