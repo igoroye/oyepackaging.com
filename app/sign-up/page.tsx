@@ -1,9 +1,7 @@
-import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { SignUpContent } from './components/SignUpContent'
 
-export const metadata: Metadata = {
-  title: 'Sign Up',
-}
+export const metadata = buildMetadata('sign-up')
 
 export default function SignUpPage() {
   return <SignUpContent />

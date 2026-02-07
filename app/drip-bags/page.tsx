@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ServicesSidebar } from './components/ServicesSidebar'
@@ -9,11 +9,7 @@ import { HowItWorksSection } from './components/HowItWorksSection'
 import { WhereToOfferSection } from './components/WhereToOfferSection'
 import { DripCTASection } from './components/DripCTASection'
 
-export const metadata: Metadata = {
-  title: 'Drip Bags - Coffee Packaging Services | ÖYE Packaging',
-  description: 'Convenient single-serve drip bag solutions for specialty coffee.',
-  alternates: { canonical: 'https://oyepackaging.com/drip-bags' }
-}
+export const metadata = buildMetadata('drip-bags')
 
 export default function DripBagsPage() {
   return (

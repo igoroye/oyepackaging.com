@@ -1,10 +1,8 @@
-import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Suspense } from 'react'
 import { SignInContent } from './components/SignInContent'
 
-export const metadata: Metadata = {
-  title: 'Sign In',
-}
+export const metadata = buildMetadata('sign-in')
 
 export default function SignInPage() {
   return (

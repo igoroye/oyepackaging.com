@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { HeroPackagingIntroSection } from '@/src/screens/V/sections/HeroPackagingIntroSection/HeroPackagingIntroSection'
 import { CoffeeProductsSection } from '@/src/screens/V/sections/CoffeeProductsSection/CoffeeProductsSection'
 import { PackagingBenefitsSection } from '@/src/screens/V/sections/PackagingBenefitsSection/PackagingBenefitsSection'
@@ -6,45 +6,7 @@ import { PackagingConfiguratorSection } from '@/src/screens/V/sections/Packaging
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 
-export const metadata: Metadata = {
-  title: 'ÖYE Packaging - Premium Coffee Packaging Solutions in Europe',
-  description: 'We support the growth of coffee roasting companies by providing fully customized packaging solutions and unique filling services. Discover our range of coffee bags, standup pouches, and sustainable packaging options manufactured in Europe.',
-  keywords: [
-    'coffee packaging',
-    'coffee bags Europe',
-    'standup pouches',
-    'flat bottom bags',
-    'coffee roasting packaging',
-    'custom coffee bags',
-    'packaging manufacturer Europe',
-    'sustainable coffee packaging',
-    'drip bags',
-    'brew bags'
-  ],
-  openGraph: {
-    title: 'ÖYE Packaging - Premium Coffee Packaging Solutions',
-    description: 'Fully customized coffee packaging solutions and unique filling services for roasting companies across Europe.',
-    type: 'website',
-    url: 'https://oyepackaging.com',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'ÖYE Packaging - Coffee Packaging Solutions'
-      }
-    ]
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'ÖYE Packaging - Premium Coffee Packaging Solutions',
-    description: 'Fully customized coffee packaging solutions and unique filling services.',
-    images: ['/og-image.jpg']
-  },
-  alternates: {
-    canonical: 'https://oyepackaging.com'
-  }
-}
+export const metadata = buildMetadata('home')
 
 export default function HomePage() {
   return (
