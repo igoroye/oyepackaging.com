@@ -28,28 +28,33 @@ const socialLinks = [
   {
     icon: "https://c.animaapp.com/mko0yo41F03JfF/img/telegram--13--1.svg",
     alt: "Telegram",
-    href: "#",
+    href: "https://t.me/hellooyepackagingbot",
   },
   {
     icon: "https://c.animaapp.com/mko0yo41F03JfF/img/facebook-logo-1.svg",
     alt: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/oyepackaging/",
     active: true,
   },
   {
     icon: "https://c.animaapp.com/mko0yo41F03JfF/img/linkedin-1.svg",
     alt: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/company/hello-oye-packaging",
+  },
+  {
+    alt: "YouTube",
+    href: "https://www.youtube.com/@OYE-Packaging/",
+    svgIcon: true,
   },
   {
     icon: "https://c.animaapp.com/mko0yo41F03JfF/img/instagram--5--1.svg",
     alt: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/oye_packaging_eu/",
   },
   {
     icon: "https://c.animaapp.com/mko0yo41F03JfF/img/whatsapp-1.svg",
     alt: "WhatsApp",
-    href: "#",
+    href: "https://wa.me/+3197010280877",
   },
 ]
 
@@ -180,6 +185,8 @@ export function Footer() {
               <a
                 key={index}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`w-10 h-10 rounded-[10px] flex items-center justify-center transition-colors ${
                   social.active
                     ? "bg-main"
@@ -187,7 +194,13 @@ export function Footer() {
                 }`}
                 aria-label={social.alt}
               >
-                <img className="w-5 h-5" alt={social.alt} src={social.icon} />
+                {social.svgIcon ? (
+                  <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 576 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                  </svg>
+                ) : (
+                  <img className="w-5 h-5" alt={social.alt} src={social.icon} />
+                )}
               </a>
             ))}
           </div>
