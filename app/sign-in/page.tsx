@@ -1,0 +1,15 @@
+import { Metadata } from 'next'
+import { Suspense } from 'react'
+import { SignInContent } from './components/SignInContent'
+
+export const metadata: Metadata = {
+  title: 'Sign In',
+}
+
+export default function SignInPage() {
+  return (
+    <Suspense>
+      <SignInContent />
+    </Suspense>
+  )
+}

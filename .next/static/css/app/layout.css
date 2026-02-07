@@ -1618,6 +1618,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-12 {
+  width: 3rem;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -1762,6 +1765,9 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-\[440px\] {
+  max-width: 440px;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1808,6 +1814,15 @@ video {
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 .cursor-default {
   cursor: default;
@@ -2213,6 +2228,14 @@ video {
 .border-white {
   border-color: var(--white);
 }
+.border-\[\#e1dfe5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 223 229 / var(--tw-border-opacity, 1));
+}
+.border-red-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity, 1));
+}
 .bg-\[\#101014\] {
   --tw-bg-opacity: 1;
   background-color: rgb(16 16 20 / var(--tw-bg-opacity, 1));
@@ -2369,6 +2392,10 @@ video {
 }
 .bg-white {
   background-color: var(--white);
+}
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
 }
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
@@ -2919,6 +2946,18 @@ video {
 .text-white {
   color: var(--white);
 }
+.text-\[\#878789\] {
+  --tw-text-opacity: 1;
+  color: rgb(135 135 137 / var(--tw-text-opacity, 1));
+}
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
+}
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -3391,6 +3430,11 @@ video {
   color: var(--white);
 }
 
+.hover\:text-\[\#101014\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 16 20 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -3447,6 +3491,11 @@ video {
 
 .focus\:ring-ring:focus {
   --tw-ring-color: hsl(var(--ring));
+}
+
+.focus\:ring-\[\#264eab\]:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(38 78 171 / var(--tw-ring-opacity, 1));
 }
 
 .focus\:ring-offset-2:focus {
@@ -3562,6 +3611,10 @@ video {
 
   .sm\:block {
     display: block;
+  }
+
+  .sm\:inline {
+    display: inline;
   }
 
   .sm\:h-10 {
