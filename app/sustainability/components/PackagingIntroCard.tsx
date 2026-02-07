@@ -20,28 +20,9 @@ export function PackagingIntroCard() {
           <div className="relative flex items-center justify-center min-h-[280px] sm:min-h-[320px]">
             <img
               src="/images/sustainability/hero-sust.webp"
-              alt="Earth with greenery"
-              className="w-[260px] sm:w-[320px] h-auto relative z-10"
+              alt="ÖYE Packaging - We produce packaging in Europe"
+              className="w-full max-w-[500px] h-auto"
             />
-
-            <div className="absolute top-4 right-0 sm:top-4 sm:right-4 z-20 flex flex-col items-end gap-2">
-              <div className="bg-white rounded-xl px-3 py-2 shadow-sm border border-gray-100">
-                <img
-                  src="/images/logo.svg"
-                  alt="ÖYE Logo"
-                  className="w-16 h-auto"
-                />
-              </div>
-              <div className="bg-main rounded-[16px] px-4 py-3 shadow-lg">
-                <p className="[font-family:'Inter',Helvetica] font-medium text-white text-xs sm:text-sm tracking-[0] leading-tight">
-                  We produce
-                  <br />
-                  packaging in Europe
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute bottom-12 right-16 sm:bottom-16 sm:right-20 w-8 h-8 bg-[#249369] rounded-full z-20" />
           </div>
         </div>
 
