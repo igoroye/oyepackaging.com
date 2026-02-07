@@ -163,24 +163,24 @@ export function Footer() {
 
         <div className="w-full h-px bg-[#e5e5e5] mb-4" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="[font-family:'Inter',Helvetica] font-normal text-text text-xs sm:text-sm tracking-[0] leading-[30px] text-center md:text-left">
-            COPYRIGHT © 2025 ÖYE PACKAGING
+        <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-between lg:gap-4">
+          <p className="[font-family:'Inter',Helvetica] font-normal text-text text-xs sm:text-sm tracking-[0] leading-[30px] text-center lg:text-left order-2 lg:order-1">
+            COPYRIGHT &copy; 2025 &Ouml;YE PACKAGING
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 order-1 lg:order-2">
             {legalLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
-                className="[font-family:'Inter',Helvetica] font-medium text-text text-xs sm:text-sm tracking-[0] leading-[30px] hover:text-main transition-colors"
+                className="[font-family:'Inter',Helvetica] font-medium text-text text-xs sm:text-sm tracking-[0] leading-[30px] hover:text-main transition-colors whitespace-nowrap"
               >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 order-3">
             {socialLinks.map((social, index) => (
               <a
                 key={index}
