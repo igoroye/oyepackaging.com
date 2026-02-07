@@ -1,0 +1,197 @@
+import type { ProductConfig } from './types'
+
+export const flatBottomBagsConfig: ProductConfig = {
+  slug: 'flat-bottom-bags',
+  title: 'FLAT BOTTOM BAGS',
+  priceRange: { min: 0.45, max: 0.85, currency: '\u20AC', perUnit: 'PER BAG' },
+  previewImage: '/images/flat-bottom-bags/top-opening.png',
+  steps: [
+    { id: 'size', label: 'SIZE', enabled: true, visible: true },
+    { id: 'material', label: 'MATERIAL', enabled: true, visible: true },
+    { id: 'features', label: 'FEATURES', enabled: true, visible: true },
+    { id: 'touchAndFeel', label: 'TOUCH AND FEEL', enabled: true, visible: true },
+    { id: 'design', label: 'DESIGN', enabled: true, visible: true },
+    { id: 'quantity', label: 'QUANTITY', enabled: true, visible: true },
+  ],
+  addons: [
+    { id: 'testPrint', label: 'TEST PRINT', enabled: true, visible: true },
+    { id: 'photoshoot', label: 'PHOTOSHOOT', enabled: true, visible: true },
+  ],
+  size: {
+    defaultSeries: 'slim',
+    defaultSize: '250g',
+    infoText: 'We offer three standard packaging sizes: Slim, Medium and Wide. These sizes fit a variety of needs. If you need something different, you can choose a custom size to create packaging that meets your specific requirements.',
+    series: [
+      {
+        id: 'slim',
+        label: 'SLIM SERIES',
+        aboutTitle: 'ABOUT SLIM SERIES',
+        aboutText: 'The Slim Series Flat Bottom Bags feature a sleek and elegant design. Their narrower profile not only provides a refined, modern aesthetic but also optimizes shelf space, making them both stylish and practical.',
+        sizes: [
+          { id: '250g', weight: '250g', dimensions: '11,5 (W) x 23,5 (H) x 6,9 (D) cm', enabled: true },
+          { id: '350g', weight: '350g', dimensions: '13 (W) x 23,5 (H) x 6,9 (D) cm', enabled: true },
+          { id: '500g', weight: '500g', dimensions: '14,5 (W) x 26 (H) x 9 (D) cm', enabled: true },
+          { id: '1000g', weight: '1000g', dimensions: '15,5 (W) x 34 (H) x 9,5 (D) cm', enabled: true },
+          { id: '3000g', weight: '3000g', dimensions: '30 (W) x 35 (H) x 13 (D) cm', enabled: true },
+        ],
+      },
+      {
+        id: 'medium',
+        label: 'MEDIUM SERIES',
+        aboutTitle: 'ABOUT MEDIUM SERIES',
+        aboutText: 'The Medium Series offers a balanced form factor that works for most coffee packaging needs. With generous dimensions and a classic profile, these bags are the go-to choice for standard retail packaging.',
+        sizes: [
+          { id: '250g', weight: '250g', dimensions: '13 (W) x 20 (H) x 8 (D) cm', enabled: true },
+          { id: '500g', weight: '500g', dimensions: '15 (W) x 24 (H) x 10 (D) cm', enabled: true },
+          { id: '1000g', weight: '1000g', dimensions: '17 (W) x 30 (H) x 12 (D) cm', enabled: true },
+        ],
+      },
+      {
+        id: 'wide',
+        label: 'WIDE SERIES',
+        aboutTitle: 'ABOUT WIDE SERIES',
+        aboutText: 'The Wide Series provides maximum front-panel space for bold branding and eye-catching designs. Perfect for premium products that need shelf presence and visual impact.',
+        sizes: [
+          { id: '250g', weight: '250g', dimensions: '14 (W) x 18 (H) x 9 (D) cm', enabled: true },
+          { id: '500g', weight: '500g', dimensions: '16 (W) x 22 (H) x 11 (D) cm', enabled: true },
+          { id: '1000g', weight: '1000g', dimensions: '19 (W) x 28 (H) x 14 (D) cm', enabled: true },
+        ],
+      },
+    ],
+  },
+  material: {
+    defaultMaterial: 'barrier',
+    infoText: 'We source materials with care, meeting European Packaging Standards and partnering with trusted suppliers for sustainable packaging and safety.',
+    materials: [
+      {
+        id: 'performance',
+        tabLabel: 'ABOUT PERFORMANCE SERIES',
+        aboutTitle: 'ABOUT PERFORMANCE SERIES',
+        aboutText: 'Our Performance Series bags offer excellent barrier protection and freshness preservation. Built with high-quality multi-layer materials, they ensure your coffee stays at its best from roasting to brewing.',
+        certificates: ['ISO 9001:2015'],
+        sustainabilityRating: 3,
+      },
+      {
+        id: 'barrier',
+        tabLabel: 'ABOUT BARRIER SERIES',
+        aboutTitle: 'ABOUT BARRIER SERIES',
+        aboutText: "These recyclable bags combine sustainability with style, featuring a clear window that showcases your coffee's quality and freshness. They offer creative branding opportunities, highlight your product, and demonstrate your commitment to the environment \u2013 making them a responsible packaging choice.",
+        certificates: ['ISO 9001:2015', 'BRC Food Certificate'],
+        sustainabilityRating: 5,
+      },
+    ],
+  },
+  features: {
+    selectionMode: 'multi',
+    infoText: 'Choose the perfect opening option to keep your coffee fresh and make every bag convenient for your customers to enjoy!',
+    features: [
+      { id: 'topOpeningZipper', label: 'TOP OPENING ZIPPER', enabled: false, defaultSelected: false },
+      { id: 'frontZipper', label: 'FRONT ZIPPER', enabled: true, defaultSelected: true },
+      { id: 'tearNotch', label: 'TEAR NOTCH', enabled: true, defaultSelected: false },
+      { id: 'coffeeValve', label: 'COFFEE VALVE', enabled: true, defaultSelected: false },
+      { id: 'handle', label: 'HANDLE', enabled: false, defaultSelected: false },
+    ],
+  },
+  touchAndFeel: {
+    selectionMode: 'single',
+    aboutTitle: 'ABOUT SOFT TOUCH',
+    aboutText: 'Soft Touch finish provides a velvety, premium feel that elevates the perceived quality of your packaging. It creates a tactile experience that customers remember.',
+    infoText: 'The finish of your packaging creates the first physical impression. Choose a texture that aligns with your brand identity and appeals to your target audience.',
+    options: [
+      { id: 'softTouch', label: 'SOFT TOUCH', enabled: true, defaultSelected: true },
+      { id: 'matte', label: 'MATTE', enabled: true, defaultSelected: false },
+      { id: 'gloss', label: 'GLOSS', enabled: true, defaultSelected: false },
+      { id: 'paperFeel', label: 'PAPER FEEL', enabled: true, defaultSelected: false },
+    ],
+  },
+  design: {
+    defaultType: 'singleColor',
+    defaultColor: 'black',
+    infoText: "Looking at your packaging from different angles really boosts visibility. This way, you can show off more design elements and make your packaging pop from every side.",
+    types: [
+      {
+        id: 'singleColor',
+        label: 'SINGLE COLOR',
+        title: 'SINGLE COLOR',
+        description: "Using a single color is perfect for minimalist branding or logos, providing both simplicity and flexibility. It's an excellent solution for startups or as a quick, cost-effective option when you need packaging on short notice or run out of stock.",
+        colorOptions: [
+          { id: 'black', label: 'BLACK' },
+          { id: 'white', label: 'WHITE' },
+        ],
+      },
+      {
+        id: 'partiallyPrinted',
+        label: 'PARTIALLY PRINTED',
+        title: 'PARTIALLY PRINTED',
+        description: 'Partially printed bags let you combine your custom design with the natural bag material. This approach reduces ink usage while still creating a distinctive, branded look.',
+      },
+      {
+        id: 'fullyPrinted',
+        label: 'FULLY PRINTED',
+        title: 'FULLY PRINTED',
+        description: 'Fully printed bags offer complete creative freedom with edge-to-edge printing. Perfect for brands that want maximum visual impact and premium shelf presence.',
+      },
+    ],
+  },
+  quantity: {
+    options: [500, 1500, 2500, 5000, 7500, 10000, 12500, 15000, 17500, 20000],
+    allowCustom: true,
+    moq: 1500,
+    defaultQuantity: 20000,
+    helperText: 'Minimum order quantity: {moq} pcs, depending on the selected customization options.',
+    infoText: 'Packing options are available in various sizes to meet your needs. Select the ideal quantity that matches your business requirements and order scale.',
+  },
+  testPrint: {
+    title: 'SEE IT BEFORE YOU PRINT IT',
+    description: 'Test printing allows you to see and feel your packaging design before committing to a full production run. This ensures colors, finishes, and overall appearance meet your expectations.',
+    infoText: 'We recommend test printing for first-time orders and new designs. It saves time and ensures your final product is exactly what you envisioned.',
+  },
+  photoshoot: {
+    defaultPackage: 'starter',
+    footnote: 'The photoshoot service is optional',
+    infoText: 'Professional product photography helps your packaging stand out in online stores, social media, and marketing materials.',
+    packages: [
+      {
+        id: 'starter',
+        label: 'STARTER PACKAGE',
+        tagline: 'For small roasters taking their first step.',
+        bullets: [
+          '5 professional product photos',
+          'White background studio shots',
+          'High-resolution digital files',
+          '3 business day turnaround',
+        ],
+        whyItWorks: 'Clean, professional imagery builds instant credibility and trust with your customers, especially for new brands entering the market.',
+        images: [],
+      },
+      {
+        id: 'professional',
+        label: 'PROFESSIONAL PACKAGE',
+        tagline: 'For established brands seeking premium visuals.',
+        bullets: [
+          '15 professional product photos',
+          'Multiple backgrounds and settings',
+          'Lifestyle and detail shots',
+          'Basic retouching included',
+          '5 business day turnaround',
+        ],
+        whyItWorks: 'Diverse, high-quality imagery gives you content for every channel \u2013 from your website to retail presentations.',
+        images: [],
+      },
+      {
+        id: 'socialMedia',
+        label: 'SOCIAL MEDIA PACKAGE',
+        tagline: 'Ready-to-post content for your channels.',
+        bullets: [
+          '20 photos optimized for social media',
+          'Instagram, Facebook, and LinkedIn formats',
+          'Creative compositions and flat lays',
+          'Brand-consistent styling',
+          '7 business day turnaround',
+        ],
+        whyItWorks: 'Scroll-stopping content designed specifically for social platforms helps increase engagement and build your online presence.',
+        images: [],
+      },
+    ],
+  },
+}
