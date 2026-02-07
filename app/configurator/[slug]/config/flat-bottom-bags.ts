@@ -39,11 +39,12 @@ export const flatBottomBagsConfig: ProductConfig = {
         id: 'medium',
         label: 'MEDIUM SERIES',
         aboutTitle: 'ABOUT MEDIUM SERIES',
-        aboutText: 'The Medium Series offers a balanced form factor that works for most coffee packaging needs. With generous dimensions and a classic profile, these bags are the go-to choice for standard retail packaging.',
+        aboutText: 'Medium Series flat-bottom coffee bags have a broader design. They provide a strong and practical solution for packaging coffee, making them stand out more.',
         sizes: [
-          { id: '250g', weight: '250g', dimensions: '13 (W) x 20 (H) x 8 (D) cm', enabled: true },
-          { id: '500g', weight: '500g', dimensions: '15 (W) x 24 (H) x 10 (D) cm', enabled: true },
-          { id: '1000g', weight: '1000g', dimensions: '17 (W) x 30 (H) x 12 (D) cm', enabled: true },
+          { id: '250g', weight: '250g', dimensions: '13 (W) x 23,5 (H) x 6 (D) cm', enabled: true },
+          { id: '500g', weight: '500g', dimensions: '15 (W) x 26 (H) x 7 (D) cm', enabled: true },
+          { id: '1000g', weight: '1000g', dimensions: '18 (W) x 32 (H) x 9 (D) cm', enabled: true },
+          { id: '3000g', weight: '3000g', dimensions: '30 (W) x 35 (H) x 13 (D) cm', enabled: true },
         ],
       },
       {
@@ -58,6 +59,17 @@ export const flatBottomBagsConfig: ProductConfig = {
         ],
       },
     ],
+    customSize: {
+      enabled: true,
+      label: 'CUSTOM SIZE',
+      aboutText: 'We offer custom dimensions that fit your unique needs, making sure your coffee packaging really stands out and showcases your brand perfectly!',
+      priceText: 'PRICE ON REQUEST',
+      fields: [
+        { id: 'width', label: 'WIDTH (cm)', placeholder: 'Width' },
+        { id: 'height', label: 'HEIGHT (cm)', placeholder: 'Height' },
+        { id: 'depth', label: 'DEPTH (cm)', placeholder: 'Depth' },
+      ],
+    },
   },
   material: {
     defaultMaterial: 'barrier',

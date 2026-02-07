@@ -6,6 +6,7 @@ import type { ProductConfig, ConfiguratorSelections, ActivePanelId, StepId } fro
 interface ConfiguratorState {
   activePanel: ActivePanelId
   selections: ConfiguratorSelections
+  visitedPanels: ActivePanelId[]
   modalOpen: boolean
   submitted: boolean
 }
@@ -14,6 +15,8 @@ type Action =
   | { type: 'SET_ACTIVE_PANEL'; panelId: ActivePanelId }
   | { type: 'SET_SERIES'; series: string }
   | { type: 'SET_SIZE'; size: string }
+  | { type: 'SET_CUSTOM_DIMENSION'; field: 'width' | 'height' | 'depth'; value: string }
+  | { type: 'CLEAR_CUSTOM_SIZE' }
   | { type: 'SET_MATERIAL'; material: string }
   | { type: 'TOGGLE_FEATURE'; featureId: string }
   | { type: 'SET_TOUCH_AND_FEEL'; optionId: string }
@@ -27,14 +30,27 @@ type Action =
   | { type: 'CLOSE_MODAL' }
   | { type: 'SET_SUBMITTED' }
 
+function addToVisited(visited: ActivePanelId[], panelId: ActivePanelId): ActivePanelId[] {
+  return visited.includes(panelId) ? visited : [...visited, panelId]
+}
+
 function reducer(state: ConfiguratorState, action: Action): ConfiguratorState {
   switch (action.type) {
-    case 'SET_ACTIVE_PANEL':
-      return { ...state, activePanel: action.panelId }
+    case 'SET_ACTIVE_PANEL': {
+      const visited = addToVisited(state.visitedPanels, state.activePanel)
+      return { ...state, activePanel: action.panelId, visitedPanels: visited }
+    }
     case 'SET_SERIES':
       return { ...state, selections: { ...state.selections, series: action.series } }
     case 'SET_SIZE':
       return { ...state, selections: { ...state.selections, size: action.size } }
+    case 'SET_CUSTOM_DIMENSION': {
+      const key = `custom${action.field.charAt(0).toUpperCase()}${action.field.slice(1)}` as
+        'customWidth' | 'customHeight' | 'customDepth'
+      return { ...state, selections: { ...state.selections, [key]: action.value } }
+    }
+    case 'CLEAR_CUSTOM_SIZE':
+      return { ...state, selections: { ...state.selections, customWidth: '', customHeight: '', customDepth: '' } }
     case 'SET_MATERIAL':
       return { ...state, selections: { ...state.selections, material: action.material } }
     case 'TOGGLE_FEATURE': {
@@ -75,6 +91,9 @@ function buildInitialState(config: ProductConfig): ConfiguratorState {
     selections: {
       series: config.size.defaultSeries,
       size: config.size.defaultSize,
+      customWidth: '',
+      customHeight: '',
+      customDepth: '',
       material: config.material.defaultMaterial,
       features: config.features.features.filter(f => f.defaultSelected && f.enabled).map(f => f.id),
       touchAndFeel: config.touchAndFeel.options.filter(o => o.defaultSelected && o.enabled).map(o => o.id),
@@ -87,6 +106,7 @@ function buildInitialState(config: ProductConfig): ConfiguratorState {
       photoshootEnabled: false,
       photoshootPackage: config.photoshoot.defaultPackage,
     },
+    visitedPanels: [],
     modalOpen: false,
     submitted: false,
   }
@@ -98,6 +118,7 @@ interface ConfiguratorContextValue {
   dispatch: React.Dispatch<Action>
   activePanel: ActivePanelId
   selections: ConfiguratorSelections
+  visitedPanels: ActivePanelId[]
   canGoPrevious: boolean
   canGoNext: boolean
   isLastPanel: boolean
@@ -152,6 +173,10 @@ export function ConfiguratorProvider({ config, children }: { config: ProductConf
     const s = state.selections
     switch (stepId) {
       case 'size': {
+        if (s.series === 'custom') {
+          const hasDim = s.customWidth || s.customHeight || s.customDepth
+          return hasDim ? 'CUSTOM SIZE' : 'CUSTOM SIZE'
+        }
         const series = config.size.series.find(sr => sr.id === s.series)
         const size = series?.sizes.find(sz => sz.id === s.size)
         return series && size ? `${series.label} (${size.weight})` : null
@@ -188,6 +213,7 @@ export function ConfiguratorProvider({ config, children }: { config: ProductConf
     dispatch,
     activePanel: state.activePanel,
     selections: state.selections,
+    visitedPanels: state.visitedPanels,
     canGoPrevious,
     canGoNext,
     isLastPanel,

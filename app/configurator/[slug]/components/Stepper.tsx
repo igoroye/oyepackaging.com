@@ -2,18 +2,7 @@ import { useConfigurator } from '../context/ConfiguratorContext'
 import type { StepId, AddonId } from '../config/types'
 
 export function Stepper() {
-  const { config, activePanel, selections, dispatch, getStepSubtitle } = useConfigurator()
-
-  const hasSelection = (stepId: StepId): boolean => {
-    switch (stepId) {
-      case 'size': return !!selections.series && !!selections.size
-      case 'material': return !!selections.material
-      case 'features': return selections.features.length > 0
-      case 'touchAndFeel': return selections.touchAndFeel.length > 0
-      case 'design': return !!selections.designType
-      case 'quantity': return selections.quantity > 0
-    }
-  }
+  const { config, activePanel, selections, visitedPanels, dispatch, getStepSubtitle } = useConfigurator()
 
   const handleStepClick = (id: StepId | AddonId, enabled: boolean) => {
     if (!enabled) return
@@ -23,12 +12,16 @@ export function Stepper() {
   const visibleSteps = config.steps.filter(s => s.visible)
   const visibleAddons = config.addons.filter(a => a.visible)
 
+  const isCustomSize = selections.series === 'custom'
+  const priceOnRequest = isCustomSize && config.size.customSize?.priceText
+
   return (
     <div className="flex flex-col gap-4">
       <div className="bg-[#f3f4f6] rounded-2xl p-2.5 flex flex-col gap-2">
         {visibleSteps.map(step => {
           const isActive = activePanel === step.id
-          const filled = hasSelection(step.id) || isActive
+          const visited = visitedPanels.includes(step.id)
+          const filled = isActive || visited
           const subtitle = getStepSubtitle(step.id)
 
           return (
@@ -66,6 +59,8 @@ export function Stepper() {
           </span>
           {visibleAddons.map(addon => {
             const isActive = activePanel === addon.id
+            const visited = visitedPanels.includes(addon.id)
+            const filled = isActive || visited
             return (
               <button
                 key={addon.id}
@@ -75,7 +70,7 @@ export function Stepper() {
                   w-full px-4 py-3 rounded-[14px] text-center transition-all
                   ${!addon.enabled
                     ? 'bg-[#e5e7eb] text-[#9ca3af] cursor-not-allowed opacity-60'
-                    : isActive
+                    : filled
                       ? 'bg-[#8eaed4] text-white cursor-pointer hover:bg-[#7ba0d0]'
                       : 'bg-[#eaecf0] text-text cursor-pointer hover:bg-[#dde0e6]'
                   }
@@ -91,12 +86,20 @@ export function Stepper() {
       )}
 
       <div className="bg-[#f3f4f6] rounded-2xl p-4 text-center">
-        <span className="[font-family:'Inter',Helvetica] font-bold text-xl text-text block">
-          {config.priceRange.currency}{config.priceRange.min.toFixed(2)} - {config.priceRange.currency}{config.priceRange.max.toFixed(2)}
-        </span>
-        <span className="[font-family:'Inter',Helvetica] font-medium text-xs text-[#6b7280] block mt-0.5">
-          ({config.priceRange.perUnit})
-        </span>
+        {priceOnRequest ? (
+          <span className="[font-family:'Inter',Helvetica] font-bold text-lg text-text block">
+            {config.size.customSize!.priceText}
+          </span>
+        ) : (
+          <>
+            <span className="[font-family:'Inter',Helvetica] font-bold text-xl text-text block">
+              {config.priceRange.currency}{config.priceRange.min.toFixed(2)} - {config.priceRange.currency}{config.priceRange.max.toFixed(2)}
+            </span>
+            <span className="[font-family:'Inter',Helvetica] font-medium text-xs text-[#6b7280] block mt-0.5">
+              ({config.priceRange.perUnit})
+            </span>
+          </>
+        )}
       </div>
     </div>
   )

@@ -31,8 +31,17 @@ export interface SeriesConfig {
   aboutText: string
 }
 
+export interface CustomSizeConfig {
+  enabled: boolean
+  label: string
+  aboutText: string
+  priceText: string
+  fields: { id: 'width' | 'height' | 'depth'; label: string; placeholder: string }[]
+}
+
 export interface SizeStepConfig {
   series: SeriesConfig[]
+  customSize?: CustomSizeConfig
   defaultSeries: string
   defaultSize: string
   infoText: string
@@ -152,6 +161,9 @@ export interface ProductConfig {
 export interface ConfiguratorSelections {
   series: string
   size: string
+  customWidth: string
+  customHeight: string
+  customDepth: string
   material: string
   features: string[]
   touchAndFeel: string[]
