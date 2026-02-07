@@ -38,14 +38,16 @@ export function Header() {
           </div>
 
           <div className="hidden lg:flex items-center gap-2">
-            <Button
-              variant="outline"
-              className="h-auto px-6 py-4 bg-white rounded-[40px] border-2 border-[#264eab] hover:bg-gray-50 transition-colors"
-            >
-              <span className="[font-family:'Inter',Helvetica] font-medium text-main text-lg tracking-[0.54px] leading-[normal]">
-                CONFIGURE PACKAGING
-              </span>
-            </Button>
+            <Link href="/configurator">
+              <Button
+                variant="outline"
+                className="h-auto px-6 py-4 bg-white rounded-[40px] border-2 border-[#264eab] hover:bg-gray-50 transition-colors"
+              >
+                <span className="[font-family:'Inter',Helvetica] font-medium text-main text-lg tracking-[0.54px] leading-[normal]">
+                  CONFIGURE PACKAGING
+                </span>
+              </Button>
+            </Link>
 
             <Button className="h-auto px-6 py-4 bg-[#2d3748] rounded-[40px] hover:bg-[#1a202c] transition-colors">
               <span className="text-white text-lg tracking-[0.54px] [font-family:'Inter',Helvetica] font-medium leading-[normal]">
@@ -78,14 +80,16 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-3 mt-4">
-              <Button
-                variant="outline"
-                className="h-auto px-6 py-3 bg-white rounded-[40px] border-2 border-[#264eab] hover:bg-gray-50 transition-colors w-full"
-              >
-                <span className="[font-family:'Inter',Helvetica] font-medium text-main text-base tracking-[0.54px] leading-[normal]">
-                  CONFIGURE PACKAGING
-                </span>
-              </Button>
+              <Link href="/configurator" onClick={() => setMobileMenuOpen(false)}>
+                <Button
+                  variant="outline"
+                  className="h-auto px-6 py-3 bg-white rounded-[40px] border-2 border-[#264eab] hover:bg-gray-50 transition-colors w-full"
+                >
+                  <span className="[font-family:'Inter',Helvetica] font-medium text-main text-base tracking-[0.54px] leading-[normal]">
+                    CONFIGURE PACKAGING
+                  </span>
+                </Button>
+              </Link>
 
               <Button className="h-auto px-6 py-3 bg-[#2d3748] rounded-[40px] hover:bg-[#1a202c] transition-colors w-full">
                 <span className="text-white text-base tracking-[0.54px] [font-family:'Inter',Helvetica] font-medium leading-[normal]">
