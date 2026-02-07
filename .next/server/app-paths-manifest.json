@@ -1,6 +1,1 @@
-{
-  "/page": "app/page.js",
-  "/sustainability/page": "app/sustainability/page.js",
-  "/configurator/page": "app/configurator/page.js",
-  "/configurator/[slug]/page": "app/configurator/[slug]/page.js"
-}
+{}
