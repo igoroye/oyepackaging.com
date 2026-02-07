@@ -235,6 +235,18 @@ export const seoConfig: Record<string, PageSEO> = {
     canonical: `${SITE_URL}/member-area`,
     noIndex: true,
   },
+
+  admin: {
+    title: 'Admin Dashboard',
+    description: 'ÖYE Packaging administration panel.',
+    noIndex: true,
+  },
+
+  'admin-seo': {
+    title: 'SEO Management',
+    description: 'Manage SEO metadata for all pages.',
+    noIndex: true,
+  },
 }
 
 export { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE }

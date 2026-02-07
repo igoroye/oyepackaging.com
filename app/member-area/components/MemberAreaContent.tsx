@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuth } from '@/contexts/AuthContext'
-import { Loader2, LogOut, User } from 'lucide-react'
+import { Loader2, LogOut, User, Settings } from 'lucide-react'
 
 export function MemberAreaContent() {
   const { user, profile, loading, signOut } = useAuth()
@@ -94,6 +94,22 @@ export function MemberAreaContent() {
                 </p>
               </div>
             </div>
+
+            {profile.is_admin && (
+              <Link href="/admin" className="group">
+                <div className="bg-white rounded-[20px] p-8 shadow-sm transition-shadow group-hover:shadow-md">
+                  <div className="w-12 h-12 bg-[#f5f5ef] rounded-full flex items-center justify-center mb-6 group-hover:bg-[#264eab]/10 transition-colors">
+                    <Settings className="w-6 h-6 text-[#264eab]" />
+                  </div>
+                  <h2 className="font-semibold text-[#101014] text-lg mb-2">
+                    ADMIN
+                  </h2>
+                  <p className="text-sm text-[#878789]">
+                    Manage website settings
+                  </p>
+                </div>
+              </Link>
+            )}
           </div>
         </div>
       </div>
