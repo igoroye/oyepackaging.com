@@ -8,20 +8,34 @@ export function ScopeOfFocusSection() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <Card className="bg-transparent border-0 rounded-[20px] overflow-hidden relative min-h-[380px] md:col-span-2">
-          <img
-            src="/images/sustainability/renewable-energy.webp"
-            alt="Renewable energy"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <CardContent className="relative z-10 p-8 flex flex-col justify-between h-full">
-            <div>
-              <div className="[font-family:'Inter',Helvetica] font-bold text-text text-4xl sm:text-5xl tracking-[0] leading-tight mb-3">
-                90%
+        <Card className="bg-bg-beige border-0 rounded-[20px] overflow-hidden relative min-h-[380px] md:col-span-2">
+          <CardContent className="relative z-10 p-8 sm:p-10 flex flex-col h-full">
+            <div className="flex items-start gap-6 mb-6">
+              <div className="flex-shrink-0">
+                <div className="relative w-[100px] h-[100px]">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <circle cx="50" cy="50" r="48" fill="none" stroke="#d1d1d1" strokeWidth="0.5" />
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="#d1d1d1" strokeWidth="0.5" />
+                    <circle cx="50" cy="50" r="36" fill="none" stroke="#d1d1d1" strokeWidth="0.5" />
+                  </svg>
+                  <span className="absolute inset-0 flex items-center justify-center [font-family:'Inter',Helvetica] font-medium text-text text-2xl tracking-[0]">
+                    90%
+                  </span>
+                </div>
               </div>
-              <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm sm:text-base tracking-[0] leading-relaxed max-w-[220px]">
-                of renewable energy is used in production, offices, and all company space.
-              </p>
+              <div className="flex items-center flex-1 pt-[50px]">
+                <div className="h-[1px] bg-text flex-1" />
+              </div>
+            </div>
+            <p className="[font-family:'Inter',Helvetica] font-normal text-text text-sm sm:text-base tracking-[0] leading-relaxed max-w-[220px]">
+              of renewable energy is used in production, offices, and all company space.
+            </p>
+            <div className="absolute bottom-0 right-0 w-[55%] h-[75%]">
+              <img
+                src="/images/sustainability/renewable-energy.webp"
+                alt="Renewable energy"
+                className="w-full h-full object-cover object-top rounded-tl-[20px]"
+              />
             </div>
           </CardContent>
         </Card>
